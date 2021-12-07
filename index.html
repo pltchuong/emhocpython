@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sách Em học Python – Dịch giả Phan Chương – Tác giả Jason R. Briggs</title>
+    <meta name="keywords" content="python, trẻ em, lập trình, sách dạy lập trình, Phan Chương, Python for Kids, chia sẻ, lan toả, miễn phí">
+    <meta name="description" content="Sách dạy lập trình Python dành cho trẻ em 10 tuổi trở lên hoặc bất cứ ai muốn học lập trình. Sách đã được dịch ra 12 ngôn ngữ, nằm trong danh sách Best Seller của Amazon.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sách Em học Python – Dịch giả Phan Chương – Tác giả Jason R. Briggs">
+    <meta property="og:description" content="Sách dạy lập trình Python dành cho trẻ em 10 tuổi trở lên hoặc bất cứ ai muốn học lập trình. Sách đã được dịch ra 12 ngôn ngữ, nằm trong danh sách Best Seller của Amazon.">
+    <meta property="og:url" content="https://emhocpython.com">
+    <meta property="og:image" content="https://emhocpython.com/images/book-covers.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1611">
+    <meta property="og:image:height" content="1200">
+    <link rel="shortcut icon" href="https://emhocpython.com/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Fira+Mono:wght@700&family=Sigmar+One&family=Source+Serif+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <style data-id="run-styles">
+      /*! normalize.css v3.0.2 | MIT License | git.io/normalize */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:0.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace, monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}*,*::before,*::after{box-sizing:border-box}html{height:100%;width:100%}html{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;background-color:#ffffff;box-sizing:border-box;color:#000000;font-family:Roboto, sans-serif;font-size:1em;line-height:1.5;min-height:100%;position:relative}html.is-leadbox{background-color:transparent}body{min-height:100%}h1,h2,h3,h4,h1.jumbo{margin:0}p{margin:0}a{font-size:inherit}img{max-width:100%;width:100%}section{position:relative;transition:opacity 0.5s ease-in, min-height 0.5s ease-in, height 0.5s ease-in}.container{width:100%}.row-compose,.widget-row,.layout,.inner-column,.column{position:relative}.site-header .layout{align-items:center;min-height:64px}.column{display:flex;flex-direction:column}.inner-column{flex:1 1 auto}.inner-column:not(.area-placeholder){min-height:1px}.widget{word-wrap:break-word;padding:1vw}.leadbox .widget{padding:1vw}.bar .widget{padding:1vw}.has-background-image{background-position:center center;background-repeat:no-repeat}.has-background-size-cover{background-size:cover}.has-background-size-center{background-size:contain}.has-background-size-repeat{background-repeat:repeat}.flex-display{display:flex}.flex-direction-column{flex-direction:column}.flex-direction-column .container{min-height:1px}.flex-direction-row{flex-direction:row}.flex-justify-flex-start{justify-content:flex-start}.flex-justify-center{justify-content:center}.flex-justify-flex-end{justify-content:flex-end}[class*='section-arrow--']::before{border:solid transparent;border-color:rgba(0,0,0,0);content:'';height:0;pointer-events:none;position:absolute;width:0;z-index:1}.section-arrow--top::before{border-bottom-color:inherit;border-width:0 30px 18px;bottom:100%;left:50%;transform:translateX(-50%)}.section-arrow--bottom::before{border-top-color:inherit;border-width:18px 30px 0;left:50%;top:100%;transform:translateX(-50%)}.section-arrow--left::before{border-bottom-color:inherit;border-width:0 30px 24px;bottom:100%;right:50%;transform:translateX(50%)}@media (min-width: 48em){.section-arrow--left::before{border-bottom-color:transparent;border-right-color:inherit;border-width:30px 24px 30px 0;bottom:0;right:100%;top:50%;transform:translateY(-50%) translateX(0)}}.section-arrow--right::before{border-top-color:inherit;border-width:24px 30px 0;left:50%;top:100%;transform:translateX(-50%)}@media (min-width: 48em){.section-arrow--right::before{border-left-color:inherit;border-top-color:transparent;border-width:30px 0 30px 24px;left:100%;top:50%;transform:translateY(-50%) translateX(0)}}.page .is-delayed{min-height:0;height:0;opacity:0;overflow:hidden;padding-bottom:0;padding-top:0}.is-visible{height:auto;opacity:1;overflow:visible}.lp-text a,.lp-text-react a,.lp-headline a{color:inherit;text-decoration:underline}.lp-text a>span,.lp-text-react a>span,.lp-headline a>span{color:inherit;text-decoration:underline}.lp-text a:hover,.lp-text a:active,.lp-text-react a:hover,.lp-text-react a:active,.lp-headline a:hover,.lp-headline a:active{text-decoration:none}.lp-text a:hover>span,.lp-text a:active>span,.lp-text-react a:hover>span,.lp-text-react a:active>span,.lp-headline a:hover>span,.lp-headline a:active>span{text-decoration:none}.widget-widget>iframe{max-width:100%;width:100%}.inner-composite{display:flex}.page grammarly-btn{display:none}.page .lp-form__input+span,.page .lp-form-react__input+span{display:none !important}@media (max-width: 480px){.hidden-mobile{display:none !important}}@media (min-width: 481px) and (max-width: 768px){.hidden-tablet{display:none !important}}@media (min-width: 769px){.hidden-desktop{display:none !important}}.hide-section{display:none}form .widget-column{padding-top:1vw;padding-bottom:1vw}form .widget-column .widget{padding-bottom:0;padding-top:0}form .widget-column .widget .lp-button-react-wrapper{margin-top:12px}form[data-form-id] button:disabled{opacity:0.5;pointer-events:none;transition:opacity 7.5s ease}@keyframes animation-circular-rotate{0%{transform-origin:50% 50%}100%{transform:rotate(360deg)}}@-webkit-keyframes animation-circular-rotate{0%{transform-origin:50% 50%}100%{transform:rotate(360deg)}}@-webkit-keyframes animation-circular-progress{0%{stroke-dasharray:1px, 200px;stroke-dashoffset:0px}50%{stroke-dasharray:100px, 200px;stroke-dashoffset:-15px}100%{stroke-dasharray:100px, 200px;stroke-dashoffset:-125px}}@keyframes animation-circular-progress{0%{stroke-dasharray:1px, 200px;stroke-dashoffset:0px}50%{stroke-dasharray:100px, 200px;stroke-dashoffset:-15px}100%{stroke-dasharray:100px, 200px;stroke-dashoffset:-125px}}.container{margin-left:auto;margin-right:auto;max-width:1140px}.container--fluid{max-width:none}.flex{display:flex;flex-direction:row;flex-wrap:wrap;margin-left:0;margin-right:0;max-width:100%}[class*='flex__']{flex:0 0 auto;min-height:1px;padding-left:0;padding-right:0}.flex--12 .flex__item--xs-1{flex-basis:8.33333%;max-width:8.33333%}.flex--12 .flex__item--xs-2{flex-basis:16.66667%;max-width:16.66667%}.flex--12 .flex__item--xs-3{flex-basis:25%;max-width:25%}.flex--12 .flex__item--xs-4{flex-basis:33.33333%;max-width:33.33333%}.flex--12 .flex__item--xs-5{flex-basis:41.66667%;max-width:41.66667%}.flex--12 .flex__item--xs-6{flex-basis:50%;max-width:50%}.flex--12 .flex__item--xs-7{flex-basis:58.33333%;max-width:58.33333%}.flex--12 .flex__item--xs-8{flex-basis:66.66667%;max-width:66.66667%}.flex--12 .flex__item--xs-9{flex-basis:75%;max-width:75%}.flex--12 .flex__item--xs-10{flex-basis:83.33333%;max-width:83.33333%}.flex--12 .flex__item--xs-11{flex-basis:91.66667%;max-width:91.66667%}.flex--12 .flex__item--xs-12{flex-basis:100%;max-width:100%}.flex--12 .flex__offset--xs-1{margin-left:8.33333%}.flex--12 .flex__offset--xs-2{margin-left:16.66667%}.flex--12 .flex__offset--xs-3{margin-left:25%}.flex--12 .flex__offset--xs-4{margin-left:33.33333%}.flex--12 .flex__offset--xs-5{margin-left:41.66667%}.flex--12 .flex__offset--xs-6{margin-left:50%}.flex--12 .flex__offset--xs-7{margin-left:58.33333%}.flex--12 .flex__offset--xs-8{margin-left:66.66667%}.flex--12 .flex__offset--xs-9{margin-left:75%}.flex--12 .flex__offset--xs-10{margin-left:83.33333%}.flex--12 .flex__offset--xs-11{margin-left:91.66667%}.flex--10 .flex__item--xs-1{flex-basis:10%;max-width:10%}.flex--10 .flex__item--xs-2{flex-basis:20%;max-width:20%}.flex--10 .flex__item--xs-3{flex-basis:30%;max-width:30%}.flex--10 .flex__item--xs-4{flex-basis:40%;max-width:40%}.flex--10 .flex__item--xs-5{flex-basis:50%;max-width:50%}.flex--10 .flex__item--xs-6{flex-basis:60%;max-width:60%}.flex--10 .flex__item--xs-7{flex-basis:70%;max-width:70%}.flex--10 .flex__item--xs-8{flex-basis:80%;max-width:80%}.flex--10 .flex__item--xs-9{flex-basis:90%;max-width:90%}.flex--10 .flex__item--xs-10{flex-basis:100%;max-width:100%}.flex--10 .flex__offset--xs-1{margin-left:10%}.flex--10 .flex__offset--xs-2{margin-left:20%}.flex--10 .flex__offset--xs-3{margin-left:30%}.flex--10 .flex__offset--xs-4{margin-left:40%}.flex--10 .flex__offset--xs-5{margin-left:50%}.flex--10 .flex__offset--xs-6{margin-left:60%}.flex--10 .flex__offset--xs-7{margin-left:70%}.flex--10 .flex__offset--xs-8{margin-left:80%}.flex--10 .flex__offset--xs-9{margin-left:90%}.flex--xs-start{justify-content:flex-start}.flex--xs-center{justify-content:center}.flex--xs-end{justify-content:flex-end}.flex--xs-around{justify-content:space-around}.flex--xs-between{justify-content:space-between}.flex--xs-top{align-items:flex-start}.flex--xs-middle{align-items:center}.flex--xs-bottom{align-items:flex-end}.flex--xs-first{order:-1}.flex--xs-last{order:1}.flex__item--xs-auto{flex:1 1 auto}.flex__item--xs-grow{flex-grow:1}.flex__item--xs-no-grow{flex-grow:0}.flex__item--xs-shrink{flex-shrink:1}.flex__item--xs-no-shrink{flex-shrink:0}.flex__item--xs-none{flex:none}.flex--xs-inline-flex{display:inline-flex}.flex--xs-flex-nowrap{flex-wrap:nowrap}.flex--xs-flex-wrap-rev{flex-wrap:wrap-reverse}.flex--xs-horizontal-rev{flex-direction:column-reverse}.flex--xs-vertical{flex-direction:column}.flex--xs-vertical-rev{flex-direction:row-reverse}@media (min-width: 480px){.flex--12 .flex__item--sm-1{flex-basis:8.33333%;max-width:8.33333%}.flex--12 .flex__item--sm-2{flex-basis:16.66667%;max-width:16.66667%}.flex--12 .flex__item--sm-3{flex-basis:25%;max-width:25%}.flex--12 .flex__item--sm-4{flex-basis:33.33333%;max-width:33.33333%}.flex--12 .flex__item--sm-5{flex-basis:41.66667%;max-width:41.66667%}.flex--12 .flex__item--sm-6{flex-basis:50%;max-width:50%}.flex--12 .flex__item--sm-7{flex-basis:58.33333%;max-width:58.33333%}.flex--12 .flex__item--sm-8{flex-basis:66.66667%;max-width:66.66667%}.flex--12 .flex__item--sm-9{flex-basis:75%;max-width:75%}.flex--12 .flex__item--sm-10{flex-basis:83.33333%;max-width:83.33333%}.flex--12 .flex__item--sm-11{flex-basis:91.66667%;max-width:91.66667%}.flex--12 .flex__item--sm-12{flex-basis:100%;max-width:100%}.flex--12 .flex__offset--sm-1{margin-left:8.33333%}.flex--12 .flex__offset--sm-2{margin-left:16.66667%}.flex--12 .flex__offset--sm-3{margin-left:25%}.flex--12 .flex__offset--sm-4{margin-left:33.33333%}.flex--12 .flex__offset--sm-5{margin-left:41.66667%}.flex--12 .flex__offset--sm-6{margin-left:50%}.flex--12 .flex__offset--sm-7{margin-left:58.33333%}.flex--12 .flex__offset--sm-8{margin-left:66.66667%}.flex--12 .flex__offset--sm-9{margin-left:75%}.flex--12 .flex__offset--sm-10{margin-left:83.33333%}.flex--12 .flex__offset--sm-11{margin-left:91.66667%}.flex--10 .flex__item--sm-1{flex-basis:10%;max-width:10%}.flex--10 .flex__item--sm-2{flex-basis:20%;max-width:20%}.flex--10 .flex__item--sm-3{flex-basis:30%;max-width:30%}.flex--10 .flex__item--sm-4{flex-basis:40%;max-width:40%}.flex--10 .flex__item--sm-5{flex-basis:50%;max-width:50%}.flex--10 .flex__item--sm-6{flex-basis:60%;max-width:60%}.flex--10 .flex__item--sm-7{flex-basis:70%;max-width:70%}.flex--10 .flex__item--sm-8{flex-basis:80%;max-width:80%}.flex--10 .flex__item--sm-9{flex-basis:90%;max-width:90%}.flex--10 .flex__item--sm-10{flex-basis:100%;max-width:100%}.flex--10 .flex__offset--sm-1{margin-left:10%}.flex--10 .flex__offset--sm-2{margin-left:20%}.flex--10 .flex__offset--sm-3{margin-left:30%}.flex--10 .flex__offset--sm-4{margin-left:40%}.flex--10 .flex__offset--sm-5{margin-left:50%}.flex--10 .flex__offset--sm-6{margin-left:60%}.flex--10 .flex__offset--sm-7{margin-left:70%}.flex--10 .flex__offset--sm-8{margin-left:80%}.flex--10 .flex__offset--sm-9{margin-left:90%}.flex--sm-start{justify-content:flex-start}.flex--sm-center{justify-content:center}.flex--sm-end{justify-content:flex-end}.flex--sm-around{justify-content:space-around}.flex--sm-between{justify-content:space-between}.flex--sm-top{align-items:flex-start}.flex--sm-middle{align-items:center}.flex--sm-bottom{align-items:flex-end}.flex--sm-first{order:-1}.flex--sm-last{order:1}.flex__item--sm-auto{flex:1 1 auto}.flex__item--sm-grow{flex-grow:1}.flex__item--sm-no-grow{flex-grow:0}.flex__item--sm-shrink{flex-shrink:1}.flex__item--sm-no-shrink{flex-shrink:0}.flex__item--sm-none{flex:none}.flex--sm-inline-flex{display:inline-flex}.flex--sm-flex-nowrap{flex-wrap:nowrap}.flex--sm-flex-wrap-rev{flex-wrap:wrap-reverse}.flex--sm-horizontal-rev{flex-direction:column-reverse}.flex--sm-vertical{flex-direction:column}.flex--sm-vertical-rev{flex-direction:row-reverse}}@media (min-width: 768px){.flex--12 .flex__item--md-1{flex-basis:8.33333%;max-width:8.33333%}.flex--12 .flex__item--md-2{flex-basis:16.66667%;max-width:16.66667%}.flex--12 .flex__item--md-3{flex-basis:25%;max-width:25%}.flex--12 .flex__item--md-4{flex-basis:33.33333%;max-width:33.33333%}.flex--12 .flex__item--md-5{flex-basis:41.66667%;max-width:41.66667%}.flex--12 .flex__item--md-6{flex-basis:50%;max-width:50%}.flex--12 .flex__item--md-7{flex-basis:58.33333%;max-width:58.33333%}.flex--12 .flex__item--md-8{flex-basis:66.66667%;max-width:66.66667%}.flex--12 .flex__item--md-9{flex-basis:75%;max-width:75%}.flex--12 .flex__item--md-10{flex-basis:83.33333%;max-width:83.33333%}.flex--12 .flex__item--md-11{flex-basis:91.66667%;max-width:91.66667%}.flex--12 .flex__item--md-12{flex-basis:100%;max-width:100%}.flex--12 .flex__offset--md-1{margin-left:8.33333%}.flex--12 .flex__offset--md-2{margin-left:16.66667%}.flex--12 .flex__offset--md-3{margin-left:25%}.flex--12 .flex__offset--md-4{margin-left:33.33333%}.flex--12 .flex__offset--md-5{margin-left:41.66667%}.flex--12 .flex__offset--md-6{margin-left:50%}.flex--12 .flex__offset--md-7{margin-left:58.33333%}.flex--12 .flex__offset--md-8{margin-left:66.66667%}.flex--12 .flex__offset--md-9{margin-left:75%}.flex--12 .flex__offset--md-10{margin-left:83.33333%}.flex--12 .flex__offset--md-11{margin-left:91.66667%}.flex--10 .flex__item--md-1{flex-basis:10%;max-width:10%}.flex--10 .flex__item--md-2{flex-basis:20%;max-width:20%}.flex--10 .flex__item--md-3{flex-basis:30%;max-width:30%}.flex--10 .flex__item--md-4{flex-basis:40%;max-width:40%}.flex--10 .flex__item--md-5{flex-basis:50%;max-width:50%}.flex--10 .flex__item--md-6{flex-basis:60%;max-width:60%}.flex--10 .flex__item--md-7{flex-basis:70%;max-width:70%}.flex--10 .flex__item--md-8{flex-basis:80%;max-width:80%}.flex--10 .flex__item--md-9{flex-basis:90%;max-width:90%}.flex--10 .flex__item--md-10{flex-basis:100%;max-width:100%}.flex--10 .flex__offset--md-1{margin-left:10%}.flex--10 .flex__offset--md-2{margin-left:20%}.flex--10 .flex__offset--md-3{margin-left:30%}.flex--10 .flex__offset--md-4{margin-left:40%}.flex--10 .flex__offset--md-5{margin-left:50%}.flex--10 .flex__offset--md-6{margin-left:60%}.flex--10 .flex__offset--md-7{margin-left:70%}.flex--10 .flex__offset--md-8{margin-left:80%}.flex--10 .flex__offset--md-9{margin-left:90%}.flex--md-start{justify-content:flex-start}.flex--md-center{justify-content:center}.flex--md-end{justify-content:flex-end}.flex--md-around{justify-content:space-around}.flex--md-between{justify-content:space-between}.flex--md-top{align-items:flex-start}.flex--md-middle{align-items:center}.flex--md-bottom{align-items:flex-end}.flex--md-first{order:-1}.flex--md-last{order:1}.flex__item--md-auto{flex:1 1 auto}.flex__item--md-grow{flex-grow:1}.flex__item--md-no-grow{flex-grow:0}.flex__item--md-shrink{flex-shrink:1}.flex__item--md-no-shrink{flex-shrink:0}.flex__item--md-none{flex:none}.flex--md-inline-flex{display:inline-flex}.flex--md-flex-nowrap{flex-wrap:nowrap}.flex--md-flex-wrap-rev{flex-wrap:wrap-reverse}.flex--md-horizontal-rev{flex-direction:column-reverse}.flex--md-vertical{flex-direction:column}.flex--md-vertical-rev{flex-direction:row-reverse}}@media (min-width: 1024px){.flex--12 .flex__item--lg-1{flex-basis:8.33333%;max-width:8.33333%}.flex--12 .flex__item--lg-2{flex-basis:16.66667%;max-width:16.66667%}.flex--12 .flex__item--lg-3{flex-basis:25%;max-width:25%}.flex--12 .flex__item--lg-4{flex-basis:33.33333%;max-width:33.33333%}.flex--12 .flex__item--lg-5{flex-basis:41.66667%;max-width:41.66667%}.flex--12 .flex__item--lg-6{flex-basis:50%;max-width:50%}.flex--12 .flex__item--lg-7{flex-basis:58.33333%;max-width:58.33333%}.flex--12 .flex__item--lg-8{flex-basis:66.66667%;max-width:66.66667%}.flex--12 .flex__item--lg-9{flex-basis:75%;max-width:75%}.flex--12 .flex__item--lg-10{flex-basis:83.33333%;max-width:83.33333%}.flex--12 .flex__item--lg-11{flex-basis:91.66667%;max-width:91.66667%}.flex--12 .flex__item--lg-12{flex-basis:100%;max-width:100%}.flex--12 .flex__offset--lg-1{margin-left:8.33333%}.flex--12 .flex__offset--lg-2{margin-left:16.66667%}.flex--12 .flex__offset--lg-3{margin-left:25%}.flex--12 .flex__offset--lg-4{margin-left:33.33333%}.flex--12 .flex__offset--lg-5{margin-left:41.66667%}.flex--12 .flex__offset--lg-6{margin-left:50%}.flex--12 .flex__offset--lg-7{margin-left:58.33333%}.flex--12 .flex__offset--lg-8{margin-left:66.66667%}.flex--12 .flex__offset--lg-9{margin-left:75%}.flex--12 .flex__offset--lg-10{margin-left:83.33333%}.flex--12 .flex__offset--lg-11{margin-left:91.66667%}.flex--10 .flex__item--lg-1{flex-basis:10%;max-width:10%}.flex--10 .flex__item--lg-2{flex-basis:20%;max-width:20%}.flex--10 .flex__item--lg-3{flex-basis:30%;max-width:30%}.flex--10 .flex__item--lg-4{flex-basis:40%;max-width:40%}.flex--10 .flex__item--lg-5{flex-basis:50%;max-width:50%}.flex--10 .flex__item--lg-6{flex-basis:60%;max-width:60%}.flex--10 .flex__item--lg-7{flex-basis:70%;max-width:70%}.flex--10 .flex__item--lg-8{flex-basis:80%;max-width:80%}.flex--10 .flex__item--lg-9{flex-basis:90%;max-width:90%}.flex--10 .flex__item--lg-10{flex-basis:100%;max-width:100%}.flex--10 .flex__offset--lg-1{margin-left:10%}.flex--10 .flex__offset--lg-2{margin-left:20%}.flex--10 .flex__offset--lg-3{margin-left:30%}.flex--10 .flex__offset--lg-4{margin-left:40%}.flex--10 .flex__offset--lg-5{margin-left:50%}.flex--10 .flex__offset--lg-6{margin-left:60%}.flex--10 .flex__offset--lg-7{margin-left:70%}.flex--10 .flex__offset--lg-8{margin-left:80%}.flex--10 .flex__offset--lg-9{margin-left:90%}.flex--lg-start{justify-content:flex-start}.flex--lg-center{justify-content:center}.flex--lg-end{justify-content:flex-end}.flex--lg-around{justify-content:space-around}.flex--lg-between{justify-content:space-between}.flex--lg-top{align-items:flex-start}.flex--lg-middle{align-items:center}.flex--lg-bottom{align-items:flex-end}.flex--lg-first{order:-1}.flex--lg-last{order:1}.flex__item--lg-auto{flex:1 1 auto}.flex__item--lg-grow{flex-grow:1}.flex__item--lg-no-grow{flex-grow:0}.flex__item--lg-shrink{flex-shrink:1}.flex__item--lg-no-shrink{flex-shrink:0}.flex__item--lg-none{flex:none}.flex--lg-inline-flex{display:inline-flex}.flex--lg-flex-nowrap{flex-wrap:nowrap}.flex--lg-flex-wrap-rev{flex-wrap:wrap-reverse}.flex--lg-horizontal-rev{flex-direction:column-reverse}.flex--lg-vertical{flex-direction:column}.flex--lg-vertical-rev{flex-direction:row-reverse}}@media (min-width: 1280px){.flex--12 .flex__item--xl-1{flex-basis:8.33333%;max-width:8.33333%}.flex--12 .flex__item--xl-2{flex-basis:16.66667%;max-width:16.66667%}.flex--12 .flex__item--xl-3{flex-basis:25%;max-width:25%}.flex--12 .flex__item--xl-4{flex-basis:33.33333%;max-width:33.33333%}.flex--12 .flex__item--xl-5{flex-basis:41.66667%;max-width:41.66667%}.flex--12 .flex__item--xl-6{flex-basis:50%;max-width:50%}.flex--12 .flex__item--xl-7{flex-basis:58.33333%;max-width:58.33333%}.flex--12 .flex__item--xl-8{flex-basis:66.66667%;max-width:66.66667%}.flex--12 .flex__item--xl-9{flex-basis:75%;max-width:75%}.flex--12 .flex__item--xl-10{flex-basis:83.33333%;max-width:83.33333%}.flex--12 .flex__item--xl-11{flex-basis:91.66667%;max-width:91.66667%}.flex--12 .flex__item--xl-12{flex-basis:100%;max-width:100%}.flex--12 .flex__offset--xl-1{margin-left:8.33333%}.flex--12 .flex__offset--xl-2{margin-left:16.66667%}.flex--12 .flex__offset--xl-3{margin-left:25%}.flex--12 .flex__offset--xl-4{margin-left:33.33333%}.flex--12 .flex__offset--xl-5{margin-left:41.66667%}.flex--12 .flex__offset--xl-6{margin-left:50%}.flex--12 .flex__offset--xl-7{margin-left:58.33333%}.flex--12 .flex__offset--xl-8{margin-left:66.66667%}.flex--12 .flex__offset--xl-9{margin-left:75%}.flex--12 .flex__offset--xl-10{margin-left:83.33333%}.flex--12 .flex__offset--xl-11{margin-left:91.66667%}.flex--10 .flex__item--xl-1{flex-basis:10%;max-width:10%}.flex--10 .flex__item--xl-2{flex-basis:20%;max-width:20%}.flex--10 .flex__item--xl-3{flex-basis:30%;max-width:30%}.flex--10 .flex__item--xl-4{flex-basis:40%;max-width:40%}.flex--10 .flex__item--xl-5{flex-basis:50%;max-width:50%}.flex--10 .flex__item--xl-6{flex-basis:60%;max-width:60%}.flex--10 .flex__item--xl-7{flex-basis:70%;max-width:70%}.flex--10 .flex__item--xl-8{flex-basis:80%;max-width:80%}.flex--10 .flex__item--xl-9{flex-basis:90%;max-width:90%}.flex--10 .flex__item--xl-10{flex-basis:100%;max-width:100%}.flex--10 .flex__offset--xl-1{margin-left:10%}.flex--10 .flex__offset--xl-2{margin-left:20%}.flex--10 .flex__offset--xl-3{margin-left:30%}.flex--10 .flex__offset--xl-4{margin-left:40%}.flex--10 .flex__offset--xl-5{margin-left:50%}.flex--10 .flex__offset--xl-6{margin-left:60%}.flex--10 .flex__offset--xl-7{margin-left:70%}.flex--10 .flex__offset--xl-8{margin-left:80%}.flex--10 .flex__offset--xl-9{margin-left:90%}.flex--xl-start{justify-content:flex-start}.flex--xl-center{justify-content:center}.flex--xl-end{justify-content:flex-end}.flex--xl-around{justify-content:space-around}.flex--xl-between{justify-content:space-between}.flex--xl-top{align-items:flex-start}.flex--xl-middle{align-items:center}.flex--xl-bottom{align-items:flex-end}.flex--xl-first{order:-1}.flex--xl-last{order:1}.flex__item--xl-auto{flex:1 1 auto}.flex__item--xl-grow{flex-grow:1}.flex__item--xl-no-grow{flex-grow:0}.flex__item--xl-shrink{flex-shrink:1}.flex__item--xl-no-shrink{flex-shrink:0}.flex__item--xl-none{flex:none}.flex--xl-inline-flex{display:inline-flex}.flex--xl-flex-nowrap{flex-wrap:nowrap}.flex--xl-flex-wrap-rev{flex-wrap:wrap-reverse}.flex--xl-horizontal-rev{flex-direction:column-reverse}.flex--xl-vertical{flex-direction:column}.flex--xl-vertical-rev{flex-direction:row-reverse}}.font-scale-1{font-size:0.5625rem}.font-scale-2{font-size:0.625rem}.font-scale-3{font-size:0.75rem}.font-scale-4{font-size:0.875rem}.font-scale-5{font-size:1rem}.font-scale-6{font-size:1.125rem}.font-scale-7{font-size:1.3125rem}.font-scale-8{font-size:1.5rem}.font-scale-9{font-size:1.6875rem}.font-scale-10{font-size:1.875rem}.font-scale-11{font-size:2.0625rem}.font-scale-12{font-size:2.25rem}.font-scale-13{font-size:2.5rem}.font-scale-14{font-size:2.75rem}.font-scale-15{font-size:3rem}.font-scale-16{font-size:3.25rem}.font-scale-17{font-size:3.5rem}.font-scale-18{font-size:3.75rem}.small-subhead.font-scale-1,.small-subhead .font-scale-1{font-size:0.625rem}.small-subhead.font-scale-2,.small-subhead .font-scale-2{font-size:0.75rem}.small-subhead.font-scale-3,.small-subhead .font-scale-3{font-size:0.875rem}.small-subhead.font-scale-4,.small-subhead .font-scale-4{font-size:1rem}.small-subhead.font-scale-5,.small-subhead .font-scale-5{font-size:1.125rem}.small-subhead.font-scale-6,.small-subhead .font-scale-6{font-size:1.3125rem}.small-subhead.font-scale-7,.small-subhead .font-scale-7{font-size:1.5rem}.small-subhead.font-scale-8,.small-subhead .font-scale-8{font-size:1.6875rem}.small-subhead.font-scale-9,.small-subhead .font-scale-9{font-size:1.875rem}.small-subhead.font-scale-10,.small-subhead .font-scale-10{font-size:2.0625rem}.subhead.font-scale-1,.subhead .font-scale-1{font-size:0.875rem}.subhead.font-scale-2,.subhead .font-scale-2{font-size:1rem}.subhead.font-scale-3,.subhead .font-scale-3{font-size:1.125rem}.subhead.font-scale-4,.subhead .font-scale-4{font-size:1.3125rem}.subhead.font-scale-5,.subhead .font-scale-5{font-size:1.5rem}.subhead.font-scale-6,.subhead .font-scale-6{font-size:1.6875rem}.subhead.font-scale-7,.subhead .font-scale-7{font-size:1.875rem}.subhead.font-scale-8,.subhead .font-scale-8{font-size:2.0625rem}.subhead.font-scale-9,.subhead .font-scale-9{font-size:2.25rem}.subhead.font-scale-10,.subhead .font-scale-10{font-size:2.5rem}.headline.font-scale-1,.headline .font-scale-1{font-size:1.125rem}.headline.font-scale-2,.headline .font-scale-2{font-size:1.3125rem}.headline.font-scale-3,.headline .font-scale-3{font-size:1.5rem}.headline.font-scale-4,.headline .font-scale-4{font-size:1.6875rem}.headline.font-scale-5,.headline .font-scale-5{font-size:1.875rem}.headline.font-scale-6,.headline .font-scale-6{font-size:2.0625rem}.headline.font-scale-7,.headline .font-scale-7{font-size:2.25rem}.headline.font-scale-8,.headline .font-scale-8{font-size:2.5rem}.headline.font-scale-9,.headline .font-scale-9{font-size:2.75rem}.headline.font-scale-10,.headline .font-scale-10{font-size:3rem}.jumbo.font-scale-1,.jumbo .font-scale-1{font-size:1.6875rem}.jumbo.font-scale-2,.jumbo .font-scale-2{font-size:1.875rem}.jumbo.font-scale-3,.jumbo .font-scale-3{font-size:2.0625rem}.jumbo.font-scale-4,.jumbo .font-scale-4{font-size:2.25rem}.jumbo.font-scale-5,.jumbo .font-scale-5{font-size:2.5rem}.jumbo.font-scale-6,.jumbo .font-scale-6{font-size:2.75rem}.jumbo.font-scale-7,.jumbo .font-scale-7{font-size:3rem}.jumbo.font-scale-8,.jumbo .font-scale-8{font-size:3.25rem}.jumbo.font-scale-9,.jumbo .font-scale-9{font-size:3.5rem}.jumbo.font-scale-10,.jumbo .font-scale-10{font-size:3.75rem}@media (min-width: 480px){.font-scale-1{font-size:0.5625rem}.font-scale-2{font-size:0.625rem}.font-scale-3{font-size:0.75rem}.font-scale-4{font-size:0.875rem}.font-scale-5{font-size:1rem}.font-scale-6{font-size:1.125rem}.font-scale-7{font-size:1.3125rem}.font-scale-8{font-size:1.5rem}.font-scale-9{font-size:1.75rem}.font-scale-10{font-size:2rem}.font-scale-11{font-size:2.375rem}.font-scale-12{font-size:2.75rem}.font-scale-13{font-size:3.125rem}.font-scale-14{font-size:3.5rem}.font-scale-15{font-size:3.875rem}.font-scale-16{font-size:4.25rem}.font-scale-17{font-size:4.625rem}.font-scale-18{font-size:5rem}.small-subhead.font-scale-1,.small-subhead .font-scale-1{font-size:0.625rem}.small-subhead.font-scale-2,.small-subhead .font-scale-2{font-size:0.75rem}.small-subhead.font-scale-3,.small-subhead .font-scale-3{font-size:0.875rem}.small-subhead.font-scale-4,.small-subhead .font-scale-4{font-size:1rem}.small-subhead.font-scale-5,.small-subhead .font-scale-5{font-size:1.125rem}.small-subhead.font-scale-6,.small-subhead .font-scale-6{font-size:1.3125rem}.small-subhead.font-scale-7,.small-subhead .font-scale-7{font-size:1.5rem}.small-subhead.font-scale-8,.small-subhead .font-scale-8{font-size:1.75rem}.small-subhead.font-scale-9,.small-subhead .font-scale-9{font-size:2rem}.small-subhead.font-scale-10,.small-subhead .font-scale-10{font-size:2.375rem}.subhead.font-scale-1,.subhead .font-scale-1{font-size:0.875rem}.subhead.font-scale-2,.subhead .font-scale-2{font-size:1rem}.subhead.font-scale-3,.subhead .font-scale-3{font-size:1.125rem}.subhead.font-scale-4,.subhead .font-scale-4{font-size:1.3125rem}.subhead.font-scale-5,.subhead .font-scale-5{font-size:1.5rem}.subhead.font-scale-6,.subhead .font-scale-6{font-size:1.75rem}.subhead.font-scale-7,.subhead .font-scale-7{font-size:2rem}.subhead.font-scale-8,.subhead .font-scale-8{font-size:2.375rem}.subhead.font-scale-9,.subhead .font-scale-9{font-size:2.75rem}.subhead.font-scale-10,.subhead .font-scale-10{font-size:3.125rem}.headline.font-scale-1,.headline .font-scale-1{font-size:1.125rem}.headline.font-scale-2,.headline .font-scale-2{font-size:1.3125rem}.headline.font-scale-3,.headline .font-scale-3{font-size:1.5rem}.headline.font-scale-4,.headline .font-scale-4{font-size:1.75rem}.headline.font-scale-5,.headline .font-scale-5{font-size:2rem}.headline.font-scale-6,.headline .font-scale-6{font-size:2.375rem}.headline.font-scale-7,.headline .font-scale-7{font-size:2.75rem}.headline.font-scale-8,.headline .font-scale-8{font-size:3.125rem}.headline.font-scale-9,.headline .font-scale-9{font-size:3.5rem}.headline.font-scale-10,.headline .font-scale-10{font-size:3.875rem}.jumbo.font-scale-1,.jumbo .font-scale-1{font-size:1.75rem}.jumbo.font-scale-2,.jumbo .font-scale-2{font-size:2rem}.jumbo.font-scale-3,.jumbo .font-scale-3{font-size:2.375rem}.jumbo.font-scale-4,.jumbo .font-scale-4{font-size:2.75rem}.jumbo.font-scale-5,.jumbo .font-scale-5{font-size:3.125rem}.jumbo.font-scale-6,.jumbo .font-scale-6{font-size:3.5rem}.jumbo.font-scale-7,.jumbo .font-scale-7{font-size:3.875rem}.jumbo.font-scale-8,.jumbo .font-scale-8{font-size:4.25rem}.jumbo.font-scale-9,.jumbo .font-scale-9{font-size:4.625rem}.jumbo.font-scale-10,.jumbo .font-scale-10{font-size:5rem}}@media (min-width: 768px){.font-scale-1{font-size:0.625rem}.font-scale-2{font-size:0.75rem}.font-scale-3{font-size:0.875rem}.font-scale-4{font-size:1rem}.font-scale-5{font-size:1.125rem}.font-scale-6{font-size:1.25rem}.font-scale-7{font-size:1.5rem}.font-scale-8{font-size:1.75rem}.font-scale-9{font-size:2rem}.font-scale-10{font-size:2.5rem}.font-scale-11{font-size:3rem}.font-scale-12{font-size:3.5rem}.font-scale-13{font-size:4rem}.font-scale-14{font-size:4.5rem}.font-scale-15{font-size:5rem}.font-scale-16{font-size:5.5rem}.font-scale-17{font-size:6rem}.font-scale-18{font-size:6.5rem}.small-subhead.font-scale-1,.small-subhead .font-scale-1{font-size:0.75rem}.small-subhead.font-scale-2,.small-subhead .font-scale-2{font-size:0.875rem}.small-subhead.font-scale-3,.small-subhead .font-scale-3{font-size:1rem}.small-subhead.font-scale-4,.small-subhead .font-scale-4{font-size:1.125rem}.small-subhead.font-scale-5,.small-subhead .font-scale-5{font-size:1.25rem}.small-subhead.font-scale-6,.small-subhead .font-scale-6{font-size:1.5rem}.small-subhead.font-scale-7,.small-subhead .font-scale-7{font-size:1.75rem}.small-subhead.font-scale-8,.small-subhead .font-scale-8{font-size:2rem}.small-subhead.font-scale-9,.small-subhead .font-scale-9{font-size:2.5rem}.small-subhead.font-scale-10,.small-subhead .font-scale-10{font-size:3rem}.subhead.font-scale-1,.subhead .font-scale-1{font-size:1rem}.subhead.font-scale-2,.subhead .font-scale-2{font-size:1.125rem}.subhead.font-scale-3,.subhead .font-scale-3{font-size:1.25rem}.subhead.font-scale-4,.subhead .font-scale-4{font-size:1.5rem}.subhead.font-scale-5,.subhead .font-scale-5{font-size:1.75rem}.subhead.font-scale-6,.subhead .font-scale-6{font-size:2rem}.subhead.font-scale-7,.subhead .font-scale-7{font-size:2.5rem}.subhead.font-scale-8,.subhead .font-scale-8{font-size:3rem}.subhead.font-scale-9,.subhead .font-scale-9{font-size:3.5rem}.subhead.font-scale-10,.subhead .font-scale-10{font-size:4rem}.headline.font-scale-1,.headline .font-scale-1{font-size:1.25rem}.headline.font-scale-2,.headline .font-scale-2{font-size:1.5rem}.headline.font-scale-3,.headline .font-scale-3{font-size:1.75rem}.headline.font-scale-4,.headline .font-scale-4{font-size:2rem}.headline.font-scale-5,.headline .font-scale-5{font-size:2.5rem}.headline.font-scale-6,.headline .font-scale-6{font-size:3rem}.headline.font-scale-7,.headline .font-scale-7{font-size:3.5rem}.headline.font-scale-8,.headline .font-scale-8{font-size:4rem}.headline.font-scale-9,.headline .font-scale-9{font-size:4.5rem}.headline.font-scale-10,.headline .font-scale-10{font-size:5rem}.jumbo.font-scale-1,.jumbo .font-scale-1{font-size:2rem}.jumbo.font-scale-2,.jumbo .font-scale-2{font-size:2.5rem}.jumbo.font-scale-3,.jumbo .font-scale-3{font-size:3rem}.jumbo.font-scale-4,.jumbo .font-scale-4{font-size:3.5rem}.jumbo.font-scale-5,.jumbo .font-scale-5{font-size:4rem}.jumbo.font-scale-6,.jumbo .font-scale-6{font-size:4.5rem}.jumbo.font-scale-7,.jumbo .font-scale-7{font-size:5rem}.jumbo.font-scale-8,.jumbo .font-scale-8{font-size:5.5rem}.jumbo.font-scale-9,.jumbo .font-scale-9{font-size:6rem}.jumbo.font-scale-10,.jumbo .font-scale-10{font-size:6.5rem}}.line-height-scale-1{line-height:0.875}.line-height-scale-2{line-height:1}.line-height-scale-3{line-height:1.125}.line-height-scale-4{line-height:1.25}.line-height-scale-5{line-height:1.375}.line-height-scale-6{line-height:1.5}.line-height-scale-7{line-height:1.625}.line-height-scale-8{line-height:1.75}.line-height-scale-9{line-height:1.875}.line-height-scale-10{line-height:2}.lp-text-react p,.lp-text-react h1,.lp-text-react h1.jumbo,.lp-text-react h2,.lp-text-react h3{min-height:1em;white-space:pre-wrap}.lp-text-react p:empty:before,.lp-text-react h1:empty:before,.lp-text-react h1.jumbo:empty:before,.lp-text-react h2:empty:before,.lp-text-react h3:empty:before{content:" ";white-space:pre}.lp-text-react p:not(:last-child),.lp-text-react ul:not(:last-child){margin-bottom:1.5em}.lp-text-react h1,.lp-text-react h2,.lp-text-react h3{font-weight:400}.lp-headline.line-height-scale-1:not(:last-child){padding-bottom:0.4375em}.lp-headline.line-height-scale-2:not(:last-child){padding-bottom:.5em}.lp-headline.line-height-scale-3:not(:last-child){padding-bottom:.5625em}.lp-headline.line-height-scale-4:not(:last-child){padding-bottom:.625em}.lp-headline.line-height-scale-5:not(:last-child){padding-bottom:.6875em}.lp-headline.line-height-scale-6:not(:last-child){padding-bottom:.75em}.lp-headline.line-height-scale-7:not(:last-child){padding-bottom:.8125em}.lp-headline.line-height-scale-8:not(:last-child){padding-bottom:.875em}.lp-headline.line-height-scale-9:not(:last-child){padding-bottom:.9375em}.lp-headline.line-height-scale-10:not(:last-child){padding-bottom:1em}.lp-button{text-decoration:none}.is-bold{font-weight:700}.is-italic{font-style:italic}.is-strikethrough{text-decoration:line-through}.is-underline,.is-underline label{text-decoration:underline}.is-strikethrough.is-underline{text-decoration:line-through underline}.text-align-left{text-align:left}.text-align-right{text-align:right}.text-align-center{text-align:center}.lp-list{list-style:none;margin:0;padding:0}.lp-list.text-align-left li{padding-left:24px}.lp-list.text-align-left li::before{position:absolute}.lp-list.text-align-left.lp-list--numbered li{padding-left:30px}.lp-list.text-align-left.lp-list--icon li{padding-left:1.5em}.lp-list li{position:relative;width:100%;white-space:pre-wrap}.lp-list li:not(:last-child){margin-bottom:0.5em}.lp-list li::before{display:inline-block;font-size:1em;font-weight:700}.lp-list--numbered{counter-reset:numbered}.lp-list--numbered.text-align-left li::before{left:-3px;top:1px}.lp-list--numbered.text-align-center li::before,.lp-list--numbered.text-align-right li::before{margin-right:10px}.lp-list--numbered li{counter-increment:numbered}.lp-list--numbered li::before{content:counter(numbered)}.lp-list--bullet.text-align-center li,.lp-list--bullet.text-align-right li{padding-left:12px}.lp-list--bullet li::before{content:"\02022";text-align:center;transform:scale(1.5);transform-origin:center right}.lp-list--checkmark.text-align-left li{padding-left:20px}.lp-list--checkmark.text-align-left li::before{left:2px;top:2px}.lp-list--checkmark.text-align-center li::before,.lp-list--checkmark.text-align-right li::before{transform:translateY(-3px)}.lp-list--checkmark li::before{content:"\f00c";font-family:"Font Awesome 5 Free";font-weight:900;transform:scale(0.85)}.lp-list--icon.text-align-center li::before,.lp-list--icon.text-align-right li::before{transform:translateY(-3px)}.lp-list--checkmark.text-align-left.font-scale-1 li{padding-left:15px}.lp-list--checkmark.text-align-left.font-scale-1 li::before{left:-4px}.lp-list--checkmark.text-align-left.font-scale-2 li{padding-left:15px}.lp-list--checkmark.text-align-left.font-scale-2 li::before{left:-4px}.lp-list--checkmark.text-align-left.font-scale-3 li{padding-left:15px}.lp-list--checkmark.text-align-left.font-scale-3 li::before{left:-4px}.lp-list--checkmark.text-align-left.font-scale-4 li::before{left:-6px}.lp-list--checkmark.text-align-left.font-scale-5 li::before{left:-6px}.lp-list--checkmark.text-align-left.font-scale-6 li::before{left:-6px}.lp-list--checkmark.text-align-left.font-scale-7 li{padding-left:25px}.lp-list--checkmark.text-align-left.font-scale-7 li::before{left:-10px}.lp-list--checkmark.text-align-left.font-scale-8 li{padding-left:25px}.lp-list--checkmark.text-align-left.font-scale-8 li::before{left:-10px}.lp-list--checkmark.text-align-left.font-scale-9 li{padding-left:25px}.lp-list--checkmark.text-align-left.font-scale-9 li::before{left:-10px}.lp-list--checkmark.text-align-left.font-scale-10 li{padding-left:25px}.lp-list--checkmark.text-align-left.font-scale-10 li::before{left:-10px}.lp-list--checkmark.text-align-left.font-scale-10 li{padding-left:35px}.lp-list--bullet.text-align-left.font-scale-1 li{padding-left:15px}.lp-list--bullet.text-align-left.font-scale-1 li::before{top:2px;left:-2px}.lp-list--bullet.text-align-left.font-scale-2 li{padding-left:15px}.lp-list--bullet.text-align-left.font-scale-2 li::before{top:2px;left:-2px}.lp-list--bullet.text-align-left.font-scale-3 li{padding-left:15px}.lp-list--bullet.text-align-left.font-scale-3 li::before{top:2px;left:-2px}.lp-list--bullet.text-align-left.font-scale-4 li{padding-left:20px}.lp-list--bullet.text-align-left.font-scale-4 li::before{left:0}.lp-list--bullet.text-align-left.font-scale-5 li{padding-left:20px}.lp-list--bullet.text-align-left.font-scale-5 li::before{left:0}.lp-list--bullet.text-align-left.font-scale-6 li{padding-left:20px}.lp-list--bullet.text-align-left.font-scale-6 li::before{left:0}.lp-list--bullet.text-align-left.font-scale-7 li::before{left:2px}.lp-list--bullet.text-align-left.font-scale-8 li::before{left:2px}.lp-list--bullet.text-align-left.font-scale-9 li::before{left:2px}.lp-list--bullet.text-align-left.font-scale-10 li{padding-left:35px}.lp-list--bullet.text-align-left.font-scale-10 li::before{left:6px}.lp-list--numbered.text-align-left.font-scale-1 li{padding-left:15px}.lp-list--numbered.text-align-left.font-scale-1 li:nth-child(n+10){padding-left:20px}.lp-list--numbered.text-align-left.font-scale-1 li::before{left:-3px}.lp-list--numbered.text-align-left.font-scale-2 li{padding-left:15px}.lp-list--numbered.text-align-left.font-scale-2 li:nth-child(n+10){padding-left:20px}.lp-list--numbered.text-align-left.font-scale-2 li::before{left:-3px}.lp-list--numbered.text-align-left.font-scale-3 li{padding-left:15px}.lp-list--numbered.text-align-left.font-scale-3 li:nth-child(n+10){padding-left:20px}.lp-list--numbered.text-align-left.font-scale-3 li::before{left:-3px}.lp-list--numbered.text-align-left.font-scale-4 li{padding-left:20px}.lp-list--numbered.text-align-left.font-scale-4 li:nth-child(n+10){padding-left:30px}.lp-list--numbered.text-align-left.font-scale-4 li::before{left:-3px}.lp-list--numbered.text-align-left.font-scale-5 li{padding-left:20px}.lp-list--numbered.text-align-left.font-scale-5 li:nth-child(n+10){padding-left:30px}.lp-list--numbered.text-align-left.font-scale-5 li::before{left:-3px}.lp-list--numbered.text-align-left.font-scale-6 li{padding-left:20px}.lp-list--numbered.text-align-left.font-scale-6 li:nth-child(n+10){padding-left:30px}.lp-list--numbered.text-align-left.font-scale-6 li::before{left:-3px}.lp-list--numbered.text-align-left.font-scale-7 li{padding-left:25px}.lp-list--numbered.text-align-left.font-scale-7 li:nth-child(n+10){padding-left:45px}.lp-list--numbered.text-align-left.font-scale-7 li::before{left:-3px}.lp-list--numbered.text-align-left.font-scale-8 li{padding-left:25px}.lp-list--numbered.text-align-left.font-scale-8 li:nth-child(n+10){padding-left:45px}.lp-list--numbered.text-align-left.font-scale-8 li::before{left:-3px}.lp-list--numbered.text-align-left.font-scale-9 li{padding-left:25px}.lp-list--numbered.text-align-left.font-scale-9 li:nth-child(n+10){padding-left:45px}.lp-list--numbered.text-align-left.font-scale-9 li::before{left:-3px}.lp-list--numbered.text-align-left.font-scale-10 li{padding-left:35px}.lp-list--numbered.text-align-left.font-scale-10 li:nth-child(n+10){padding-left:60px}.lp-list--numbered.text-align-left.font-scale-10 li::before{left:-2px}.lp-list--icon.text-align-left li::before{left:-6px}.lp-list--icon.text-align-left.font-scale-1 li{padding-left:20px}.lp-list--icon.text-align-left.font-scale-2 li{padding-left:20px}.lp-list--icon.text-align-left.font-scale-3 li{padding-left:20px}.lp-list--icon.text-align-left.font-scale-7 li{padding-left:40px}.lp-list--icon.text-align-left.font-scale-8 li{padding-left:40px}.lp-list--icon.text-align-left.font-scale-9 li{padding-left:40px}.lp-list--icon.text-align-left.font-scale-10 li{padding-left:40px}.lp-list--icon.text-align-left.font-scale-10 li{padding-left:55px}@media (max-width: 480px){.lp-list--checkmark.text-align-left.font-scale-7 li::before{left:-5px}.lp-list--checkmark.text-align-left.font-scale-8 li::before{left:-5px}.lp-list--checkmark.text-align-left.font-scale-9 li::before{left:-5px}.lp-list--checkmark.text-align-left.font-scale-10 li::before{left:-5px}.lp-list--numbered.text-align-left.font-scale-1 li:nth-child(n+10){padding-left:20px}.lp-list--numbered.text-align-left.font-scale-2 li:nth-child(n+10){padding-left:20px}.lp-list--numbered.text-align-left.font-scale-3 li:nth-child(n+10){padding-left:20px}.lp-list--numbered.text-align-left.font-scale-4 li:nth-child(n+10){padding-left:25px}.lp-list--numbered.text-align-left.font-scale-5 li:nth-child(n+10){padding-left:25px}.lp-list--numbered.text-align-left.font-scale-6 li:nth-child(n+10){padding-left:25px}.lp-list--numbered.text-align-left.font-scale-7 li:nth-child(n+10){padding-left:35px}.lp-list--numbered.text-align-left.font-scale-8 li:nth-child(n+10){padding-left:35px}.lp-list--numbered.text-align-left.font-scale-9 li:nth-child(n+10){padding-left:35px}.lp-list--numbered.text-align-left.font-scale-10 li:nth-child(n+10){padding-left:40px}.lp-list--icon.text-align-left.font-scale-7 li{padding-left:28px}.lp-list--icon.text-align-left.font-scale-7 li::before{left:-5px}.lp-list--icon.text-align-left.font-scale-8 li{padding-left:28px}.lp-list--icon.text-align-left.font-scale-8 li::before{left:-5px}.lp-list--icon.text-align-left.font-scale-9 li{padding-left:28px}.lp-list--icon.text-align-left.font-scale-9 li::before{left:-5px}.lp-list--icon.text-align-left.font-scale-10 li{padding-left:35px}}[data-widget-type='lp-image-text'] .composite-box,[data-widget-type='lp-calendar-text'] .composite-box{align-items:stretch}[data-widget-type='lp-image-text'] .composite-column-compose,[data-widget-type='lp-calendar-text'] .composite-column-compose{display:flex}[data-widget-type='lp-image-text'] .layout-TC .composite-column-compose,[data-widget-type='lp-image-text'] .layout-BC .composite-column-compose,[data-widget-type='lp-calendar-text'] .layout-TC .composite-column-compose,[data-widget-type='lp-calendar-text'] .layout-BC .composite-column-compose{flex-direction:column}[data-widget-type='lp-image-text'] .layout-TR .composite-row-compose,[data-widget-type='lp-image-text'] .layout-CR .composite-row-compose,[data-widget-type='lp-image-text'] .layout-BR .composite-row-compose,[data-widget-type='lp-image-text'] .layout-TL .composite-row-compose,[data-widget-type='lp-image-text'] .layout-CL .composite-row-compose,[data-widget-type='lp-image-text'] .layout-BL .composite-row-compose,[data-widget-type='lp-calendar-text'] .layout-TR .composite-row-compose,[data-widget-type='lp-calendar-text'] .layout-CR .composite-row-compose,[data-widget-type='lp-calendar-text'] .layout-BR .composite-row-compose,[data-widget-type='lp-calendar-text'] .layout-TL .composite-row-compose,[data-widget-type='lp-calendar-text'] .layout-CL .composite-row-compose,[data-widget-type='lp-calendar-text'] .layout-BL .composite-row-compose{flex:1 1 100%;flex-direction:row}[data-widget-type='lp-image-text'] .layout-TR .composite-row-compose,[data-widget-type='lp-image-text'] .layout-TL .composite-row-compose,[data-widget-type='lp-calendar-text'] .layout-TR .composite-row-compose,[data-widget-type='lp-calendar-text'] .layout-TL .composite-row-compose{align-items:flex-start}[data-widget-type='lp-image-text'] .layout-CR .composite-row-compose,[data-widget-type='lp-image-text'] .layout-CL .composite-row-compose,[data-widget-type='lp-calendar-text'] .layout-CR .composite-row-compose,[data-widget-type='lp-calendar-text'] .layout-CL .composite-row-compose{align-items:center}[data-widget-type='lp-image-text'] .layout-BR .composite-row-compose,[data-widget-type='lp-image-text'] .layout-BL .composite-row-compose,[data-widget-type='lp-calendar-text'] .layout-BR .composite-row-compose,[data-widget-type='lp-calendar-text'] .layout-BL .composite-row-compose{align-items:flex-end}@media (max-width: 767px){.section .composite{padding:8px}}.leadbox .section,.leadbox .page>section{padding:initial}@media (max-width: 479px){.inner-column{padding:8px}}@media (min-width: 480px) and (max-width: 767px){.inner-column{padding:12px}}
+    </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-26668811-8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-26668811-8');
+    </script>
+  </head>
+  <body>
+    <div class="page-background"></div>
+    <style data-emotion-css="49a6w1 jrj5gy 119qg5r 2jofpk 1udicc2 1udnsnn 13614c5 n13493">.page-background{position:fixed;height:100vh;top:0;left:0;right:0;bottom:0;z-index:-1;background-color:rgba(255,255,255,1);}section{max-width:1140px;margin:0 auto;}.bar section{max-width:none;}.container{max-width:1140px;}@media (min-width:calc(1140px / 16)em){.widget{padding:calc(1140px / 100);}}h1,h2,h3,h4,h1.display{font-family:Sigmar One;color:rgb(141,198,63);}p,li{font-family:Source Serif Pro;color:rgb(74,74,80);}.lp-calendar-react .month,.lp-calendar-react .date{font-family:Source Serif Pro;}.lp-countdown-timer-react .countdown-container .time-wrapper,.lp-countdown-timer-react .countdown-container .time-name{font-family:Source Serif Pro;}</style>
+    <div class="page">
+      <style data-emotion-css="1u5gq9f">.css-1u5gq9f{background-color:rgba(0,0,0,0);border-color:rgba(0,0,0,0);background-size:cover;background-position:center center;background-repeat:no-repeat;}.css-1u5gq9f > .container{padding-top:0vw;padding-right:0vw;padding-bottom:0vw;padding-left:0vw;}.site-header .css-1u5gq9f > .container{padding-top:-5px;padding-right:0;padding-bottom:-5px;padding-left:0;-webkit-transition:padding 0.03s ease;transition:padding 0.03s ease;}.bar .css-1u5gq9f{padding:0 50px;}@media (max-width:23.75em){.bar .css-1u5gq9f{padding:0 25px;}}@media (min-width:71.25em){.css-1u5gq9f > .container{padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;}}</style>
+      <section class="section css-1u5gq9f" data-guid="bf384459-0cdf-2c1c-7e49-f8538e2cc0ae">
+        <div class="container" id="header">
+          <div class="layout flex flex--12" data-guid="6a174346-4884-dd0c-66ff-f32ded2b7259">
+            <style data-emotion-css="v8gnm5">.css-v8gnm5{padding-top:0vw;padding-right:0vw;padding-bottom:0vw;padding-left:0vw;}@media(min-width:71.25em){.css-v8gnm5.column{padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;}.css-v8gnm5.column > .inner-column{padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;}}</style>
+            <div class="column flex__item--md-12 flex__item--xs-12 css-v8gnm5" data-guid="eadd980f-84d4-4c8c-9535-1a131b1b2abc">
+              <style data-emotion-css="8f3iaw">.css-8f3iaw{background-color:rgba(0,0,0,0);border-color:rgba(0,0,0,0);background-size:cover;background-position:center center;background-repeat:no-repeat;padding-top:0vw;padding-right:0vw;padding-bottom:0vw;padding-left:0vw;}.bar .css-8f3iaw{padding-top:0;padding-bottom:0;}</style>
+              <div class="inner-column css-8f3iaw">
+                <style data-emotion-css="1v1axsl">.section--center-widgets .css-1v1axsl{-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}@media (max-width:767px){.bar .css-1v1axsl{-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}}</style>
+                <div class="row flex flex--12 css-1v1axsl">
+                  <style data-emotion-css="8x0d4x">.section--center-widgets .css-8x0d4x{-webkit-flex-basis:auto;-ms-flex-preferred-size:auto;flex-basis:auto;max-width:100%;}</style>
+                  <div class="composite flex__item--md-12 flex__item--xs-12 css-8x0d4x">
+                    <div class="inner-composite flex flex--12">
+                      <div class="widget-column flex__item--md-12 flex__item--xs-12">
+                        <div class="widget-row flex flex--12">
+                          <div class="flex__item--md-12 flex__item--xs-12">
+                            <div data-widget-id="7aafd2a4-0b38-9ee1-921a-e602781900a6" class="widget">
+                              <style data-emotion-css="1yltisf">.css-1yltisf{text-align:center;}</style>
+                              <div class="css-1yltisf">
+                                <div>
+                                  <style data-emotion-css="499t0o">.css-499t0o{display:inline-block;vertical-align:middle;max-width:706px;}@media (max-width:530px){.site-header .composite .widget .css-499t0o{max-width:calc(100% - 80px);}}</style>
+                                  <img class="lp-image-react w-7aafd2a4-0b38-9ee1-921a-e602781900a6 css-499t0o" src="/images/logo.png" data-image-upload-source="builder3" alt="" style="width:100%;max-width:88px"/>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <style data-emotion-css="1hc4n01">.css-1hc4n01{background-color:rgba(0,0,0,0);border-color:rgba(0,0,0,0);background-size:cover;background-position:center center;background-repeat:no-repeat;min-height:100vh;}.css-1hc4n01 > .container{padding-top:0vw;padding-right:0vw;padding-bottom:0vw;padding-left:0vw;}.site-header .css-1hc4n01 > .container{padding-top:-5px;padding-right:0;padding-bottom:-5px;padding-left:0;-webkit-transition:padding 0.03s ease;transition:padding 0.03s ease;}.bar .css-1hc4n01{padding:0 50px;}@media (max-width:23.75em){.bar .css-1hc4n01{padding:0 25px;}}@media (min-width:71.25em){.css-1hc4n01 > .container{padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;}}</style>
+      <section class="flex-display flex-direction-column flex-justify-center section css-1hc4n01" data-guid="349ac27d-9e51-d126-81e7-f65f2ca4b67b">
+        <div class="container" id="flipbook">
+          <div class="layout flex flex--12" data-guid="bec1ec01-8f59-6d4c-d92e-4f08bfdb946f">
+            <style data-emotion-css="1b5csnr">.css-1b5csnr{padding-top:0vw;padding-right:0vw;padding-bottom:0vw;padding-left:0vw;}@media(min-width:71.25em){.css-1b5csnr.column{padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;}.css-1b5csnr.column > .inner-column{padding-top:11.4px;padding-right:11.4px;padding-bottom:11.4px;padding-left:11.4px;}}</style>
+            <div class="column flex__item--md-12 flex__item--xs-12 css-1b5csnr" data-guid="24ecfa55-721b-5e48-c9b5-0304fb9d2884">
+              <style data-emotion-css="efs6e5">.css-efs6e5{background-color:rgba(0,0,0,0);border-color:rgba(0,0,0,0);background-size:cover;background-position:center center;background-repeat:no-repeat;padding-top:1vw;padding-right:1vw;padding-bottom:1vw;padding-left:1vw;}.bar .css-efs6e5{padding-top:0;padding-bottom:0;}</style>
+              <div class="inner-column css-efs6e5">
+                <div class="row flex flex--12 css-1v1axsl">
+                  <div class="composite flex__item--md-12 flex__item--xs-12 css-8x0d4x">
+                    <div class="inner-composite flex flex--12">
+                      <div class="widget-column flex__item--md-12 flex__item--xs-12">
+                        <div class="widget-row flex flex--12">
+                          <div class="flex__item--md-12 flex__item--xs-12">
+                            <div data-widget-id="1b23530b-aa88-97a9-2281-211907df7337" class="widget">
+                              <div data-widget-type="LpHtmlReact"><iframe src="https://player.flipsnack.com?hash=RUI4QkY1REQ3NUUrZGNqbHgxZGU0Nw==" width="100%" style="height: calc(100vh);" seamless="seamless" scrolling="no" frameBorder="0" allowFullScreen></iframe></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <style data-emotion-css="3s0jxe">.css-3s0jxe{background-color:rgba(255,255,255,1);border-color:rgba(255,255,255,1);background-size:cover;background-position:center center;background-repeat:no-repeat;}.css-3s0jxe > .container{padding-top:0vw;padding-right:0vw;padding-bottom:0vw;padding-left:0vw;}.site-header .css-3s0jxe > .container{padding-top:-5px;padding-right:0;padding-bottom:-5px;padding-left:0;-webkit-transition:padding 0.03s ease;transition:padding 0.03s ease;}.bar .css-3s0jxe{padding:0 50px;}@media (max-width:23.75em){.bar .css-3s0jxe{padding:0 25px;}}@media (min-width:71.25em){.css-3s0jxe > .container{padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;}}</style>
+      <section class="section css-3s0jxe" data-guid="e9e8bbbb-4a1f-ceab-de6e-d319eb7f400e">
+        <div class="container" id="featuresservices-1">
+          <div class="layout flex flex--12" data-guid="620f535a-f034-6512-42bf-a875a427bf36">
+            <div class="column flex__item--md-12 flex__item--xs-12 css-1b5csnr" data-guid="650e9351-2b5a-e138-7a73-e1957d731875">
+              <div class="inner-column css-efs6e5">
+                <div class="row flex flex--12 css-1v1axsl">
+                  <div class="composite flex__item--md-12 flex__item--xs-12 css-8x0d4x">
+                    <div class="inner-composite flex flex--12">
+                      <div class="widget-column flex__item--md-12 flex__item--xs-12">
+                        <div class="widget-row flex flex--12">
+                          <div class="flex__item--md-12 flex__item--xs-12">
+                            <div data-widget-id="41ddcd69-1f5b-4b6c-abd3-9019feed07d4" class="widget">
+                              <div class="lp-text-react lp-headline-react" data-widget-type="LpTextReact">
+                                <h1 class="lp-headline text-align-center font-scale-6 line-height-scale-3 headline"><strong>Trong sách có những nội dung gì?</strong></h1>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="layout flex flex--12" data-guid="9d4c5c79-3ea9-aaaa-b4fe-d97bc4fbde3c">
+            <div class="column flex__item--md-3 flex__item--xs-12 css-1b5csnr" data-guid="7219f1f5-9cf1-87d8-e6ac-23ffaaaa8b1b">
+              <div class="inner-column css-efs6e5">
+                <div class="row flex flex--12 css-1v1axsl">
+                  <div class="composite flex__item--md-12 flex__item--xs-12 css-8x0d4x">
+                    <div class="inner-composite flex flex--12">
+                      <div class="widget-column flex__item--md-12 flex__item--xs-12">
+                        <div class="widget-row flex flex--12">
+                          <div class="flex__item--md-12 flex__item--xs-12">
+                            <div data-widget-id="40e2be98-8a78-282c-96a4-36f2840ce254" class="widget">
+                              <div class="css-1yltisf">
+                                <div>
+                                  <style data-emotion-css="qn9oj2">.css-qn9oj2{display:inline-block;vertical-align:middle;max-width:311px;}@media (max-width:530px){.site-header .composite .widget .css-qn9oj2{max-width:calc(100% - 80px);}}</style>
+                                  <img class="lp-image-react w-40e2be98-8a78-282c-96a4-36f2840ce254 css-qn9oj2" src="/images/ft-python.jpg" data-image-upload-source="builder3" alt="" style="width:100%;max-width:103px"/>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row flex flex--12 css-1v1axsl">
+                  <div class="composite flex__item--md-12 flex__item--xs-12 css-8x0d4x">
+                    <div class="inner-composite flex flex--12">
+                      <div class="widget-column flex__item--md-12 flex__item--xs-12">
+                        <div class="widget-row flex flex--12">
+                          <div class="flex__item--md-12 flex__item--xs-12">
+                            <div data-widget-id="5e29ea14-230d-e7f3-a53a-c61b4be5ae7f" class="widget">
+                              <div class="lp-text-react lp-headline-react" data-widget-type="LpTextReact">
+                                <p class="text-align-center font-scale-5 line-height-scale-8"><span style="color: rgba(0, 0, 0, 1);">Vài lời mở đầu về lập trình máy tính, ngôn ngữ lập trình Python, và các hướng dẫn cài đặt.</span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column flex__item--md-3 flex__item--xs-12 css-1b5csnr" data-guid="a755d3fe-861e-6bd8-f241-7f956bbb139a">
+              <div class="inner-column css-efs6e5">
+                <div class="row flex flex--12 css-1v1axsl">
+                  <div class="composite flex__item--md-12 flex__item--xs-12 css-8x0d4x">
+                    <div class="inner-composite flex flex--12">
+                      <div class="widget-column flex__item--md-12 flex__item--xs-12">
+                        <div class="widget-row flex flex--12">
+                          <div class="flex__item--md-12 flex__item--xs-12">
+                            <div data-widget-id="14b5eda4-3937-5f21-5ad9-b40ea4f653ac" class="widget">
+                              <div class="css-1yltisf">
+                                <div>
+                                  <style data-emotion-css="b0xcb5">.css-b0xcb5{display:inline-block;vertical-align:middle;max-width:265px;}@media (max-width:530px){.site-header .composite .widget .css-b0xcb5{max-width:calc(100% - 80px);}}</style>
+                                  <img class="lp-image-react w-14b5eda4-3937-5f21-5ad9-b40ea4f653ac css-b0xcb5" src="/images/ft-calculator.jpg" data-image-upload-source="builder3" alt="" style="width:100%;max-width:88px"/>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row flex flex--12 css-1v1axsl">
+                  <div class="composite flex__item--md-12 flex__item--xs-12 css-8x0d4x">
+                    <div class="inner-composite flex flex--12">
+                      <div class="widget-column flex__item--md-12 flex__item--xs-12">
+                        <div class="widget-row flex flex--12">
+                          <div class="flex__item--md-12 flex__item--xs-12">
+                            <div data-widget-id="3743dea7-539f-5fc7-f8ec-25db7117e348" class="widget">
+                              <div class="lp-text-react lp-headline-react" data-widget-type="LpTextReact">
+                                <p class="text-align-center font-scale-5 line-height-scale-8"><span style="color: rgba(0, 0, 0, 1);">Giới thiệu về tính toán căn bản, biến trong lập trình, và các kiểu dữ liệu cơ bản của Python.</span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column flex__item--md-3 flex__item--xs-12 css-1b5csnr" data-guid="a4980ede-80e7-0c45-23dd-1278462cc39b">
+              <div class="inner-column css-efs6e5">
+                <div class="row flex flex--12 css-1v1axsl">
+                  <div class="composite flex__item--md-12 flex__item--xs-12 css-8x0d4x">
+                    <div class="inner-composite flex flex--12">
+                      <div class="widget-column flex__item--md-12 flex__item--xs-12">
+                        <div class="widget-row flex flex--12">
+                          <div class="flex__item--md-12 flex__item--xs-12">
+                            <div data-widget-id="5a5a4c1c-c08d-5e84-5076-63d707cad05f" class="widget">
+                              <div class="css-1yltisf">
+                                <div>
+                                  <style data-emotion-css="19rbvgz">.css-19rbvgz{display:inline-block;vertical-align:middle;max-width:359px;}@media (max-width:530px){.site-header .composite .widget .css-19rbvgz{max-width:calc(100% - 80px);}}</style>
+                                  <img class="lp-image-react w-5a5a4c1c-c08d-5e84-5076-63d707cad05f css-19rbvgz" src="/images/ft-pig.jpg" data-image-upload-source="builder3" alt="" style="width:100%;max-width:120px"/>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row flex flex--12 css-1v1axsl">
+                  <div class="composite flex__item--md-12 flex__item--xs-12 css-8x0d4x">
+                    <div class="inner-composite flex flex--12">
+                      <div class="widget-column flex__item--md-12 flex__item--xs-12">
+                        <div class="widget-row flex flex--12">
+                          <div class="flex__item--md-12 flex__item--xs-12">
+                            <div data-widget-id="63722a51-a469-046f-8caa-d95338e71de2" class="widget">
+                              <div class="lp-text-react lp-headline-react" data-widget-type="LpTextReact">
+                                <p class="text-align-center font-scale-5 line-height-scale-8"><span style="color: rgba(0, 0, 0, 1);">Giới thiệu các dạng khác nhau của cấu trúc điều kiện </span><span style="color: rgba(255, 119, 0, 1);"><span class="font-scale-4"><span style="font-family: &quot;Fira Mono&quot;, sans-serif;"><strong>if</strong></span></span></span><span style="color: rgba(0, 0, 0, 1);"> và </span><span style="color: rgba(255, 119, 0, 1);"><span class="font-scale-4"><span style="font-family: &quot;Fira Mono&quot;, sans-serif;"><strong>else</strong></span></span></span><span style="color: rgba(0, 0, 0, 1);">. Giới thiệu các vòng lặp </span><span style="color: rgba(255, 119, 0, 1);"><span class="font-scale-4"><span style="font-family: &quot;Fira Mono&quot;, sans-serif;"><strong>for</strong></span></span></span><span style="color: rgba(0, 0, 0, 1);"> và </span><span style="color: rgba(255, 119, 0, 1);"><span class="font-scale-4"><span style="font-family: &quot;Fira Mono&quot;, sans-serif;"><strong>while</strong></span></span></span><span style="color: rgba(0, 0, 0, 1);">.</span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column flex__item--md-3 flex__item--xs-12 css-1b5csnr" data-guid="ff61a7de-fdf4-a308-88db-822fed646449">
+              <div class="inner-column css-efs6e5">
+                <div class="row flex flex--12 css-1v1axsl">
+                  <div class="composite flex__item--md-12 flex__item--xs-12 css-8x0d4x">
+                    <div class="inner-composite flex flex--12">
+                      <div class="widget-column flex__item--md-12 flex__item--xs-12">
+                        <div class="widget-row flex flex--12">
+                          <div class="flex__item--md-12 flex__item--xs-12">
+                            <div data-widget-id="79ae3ee4-0826-812c-e147-d837c58ab477" class="widget">
+                              <div class="css-1yltisf">
+                                <div>
+                                  <style data-emotion-css="1oz0dj">.css-1oz0dj{display:inline-block;vertical-align:middle;max-width:326px;}@media (max-width:530px){.site-header .composite .widget .css-1oz0dj{max-width:calc(100% - 80px);}}</style>
+                                  <img class="lp-image-react w-79ae3ee4-0826-812c-e147-d837c58ab477 css-1oz0dj" src="/images/ft-treasure.jpg" data-image-upload-source="builder3" alt="" style="width:100%;max-width:108px"/>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row flex flex--12 css-1v1axsl">
+                  <div class="composite flex__item--md-12 flex__item--xs-12 css-8x0d4x">
+                    <div class="inner-composite flex flex--12">
+                      <div class="widget-column flex__item--md-12 flex__item--xs-12">
+                        <div class="widget-row flex flex--12">
+                          <div class="flex__item--md-12 flex__item--xs-12">
+                            <div data-widget-id="7b7a16bb-68d8-1208-d553-c5c4829b0acf" class="widget">
+                              <div class="lp-text-react lp-headline-react" data-widget-type="LpTextReact">
+                                <p class="text-align-center font-scale-5 line-height-scale-8"><span style="color: rgba(0, 0, 0, 1);">Học cách tái sử dụng code với hàm, lớp và đối tượng để lập trình hiệu quả, súc tích và dễ đọc hơn.</span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section css-3s0jxe" data-guid="cc0dd4a7-99da-8845-f025-71357264a49f">
+        <div class="container" id="featuresservices-2">
+          <div class="layout flex flex--12" data-guid="63ea2071-f959-7859-0667-61d7700a2bac">
+            <div class="column flex__item--md-3 flex__item--xs-12 css-1b5csnr" data-guid="c06765f3-e79f-8c98-d40a-98fce8a6c509">
+              <div class="inner-column css-efs6e5">
+                <div class="row flex flex--12 css-1v1axsl">
+                  <div class="composite flex__item--md-12 flex__item--xs-12 css-8x0d4x">
+                    <div class="inner-composite flex flex--12">
+                      <div class="widget-column flex__item--md-12 flex__item--xs-12">
+                        <div class="widget-row flex flex--12">
+                          <div class="flex__item--md-12 flex__item--xs-12">
+                            <div data-widget-id="0c491428-7cb2-1765-45e8-19e72a726da1" class="widget">
+                              <div class="css-1yltisf">
+                                <div>
+                                  <style data-emotion-css="xc4qbt">.css-xc4qbt{display:inline-block;vertical-align:middle;max-width:965px;}@media (max-width:530px){.site-header .composite .widget .css-xc4qbt{max-width:calc(100% - 80px);}}</style>
+                                  <img class="lp-image-react w-0c491428-7cb2-1765-45e8-19e72a726da1 css-xc4qbt" src="/images/ft-dog.jpg" data-image-upload-source="builder3" alt="" style="width:100%;max-width:193px"/>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row flex flex--12 css-1v1axsl">
+                  <div class="composite flex__item--md-12 flex__item--xs-12 css-8x0d4x">
+                    <div class="inner-composite flex flex--12">
+                      <div class="widget-column flex__item--md-12 flex__item--xs-12">
+                        <div class="widget-row flex flex--12">
+                          <div class="flex__item--md-12 flex__item--xs-12">
+                            <div data-widget-id="3d96a2bd-b473-c211-d2ef-0adf8595905d" class="widget">
+                              <div class="lp-text-react lp-headline-react" data-widget-type="LpTextReact">
+                                <p class="text-align-center font-scale-5 line-height-scale-8"><span style="color: rgba(0, 0, 0, 1);">Học qua về một số hàm và lớp có sẵn </span><span style="color: rgba(255, 0, 0, 1);"><span style="font-family: &quot;Architects Daughter&quot;, sans-serif;"><em><strong>(built-in)</strong></em></span></span><span style="color: rgba(0, 0, 0, 1);"> của Python, chỉ những cái hay được sử dụng nhất.</span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column flex__item--md-3 flex__item--xs-12 css-1b5csnr" data-guid="50be2714-6439-3947-c5ef-9c4e97a56008">
+              <div class="inner-column css-efs6e5">
+                <div class="row flex flex--12 css-1v1axsl">
+                  <div class="composite flex__item--md-12 flex__item--xs-12 css-8x0d4x">
+                    <div class="inner-composite flex flex--12">
+                      <div class="widget-column flex__item--md-12 flex__item--xs-12">
+                        <div class="widget-row flex flex--12">
+                          <div class="flex__item--md-12 flex__item--xs-12">
+                            <div data-widget-id="73aa523c-fd9b-66bc-0552-dccd61092c09" class="widget">
+                              <div class="css-1yltisf">
+                                <div>
+                                  <style data-emotion-css="oet3hz">.css-oet3hz{display:inline-block;vertical-align:middle;max-width:751px;}@media (max-width:530px){.site-header .composite .widget .css-oet3hz{max-width:calc(100% - 80px);}}</style>
+                                  <img class="lp-image-react w-73aa523c-fd9b-66bc-0552-dccd61092c09 css-oet3hz" src="/images/ft-turtle.jpg" data-image-upload-source="builder3" alt="" style="width:100%;max-width:150px"/>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row flex flex--12 css-1v1axsl">
+                  <div class="composite flex__item--md-12 flex__item--xs-12 css-8x0d4x">
+                    <div class="inner-composite flex flex--12">
+                      <div class="widget-column flex__item--md-12 flex__item--xs-12">
+                        <div class="widget-row flex flex--12">
+                          <div class="flex__item--md-12 flex__item--xs-12">
+                            <div data-widget-id="115d8e62-9441-9782-ae9b-be34e083cae5" class="widget">
+                              <div class="lp-text-react lp-headline-react" data-widget-type="LpTextReact">
+                                <p class="text-align-center font-scale-5 line-height-scale-8"><span style="color: rgba(0, 0, 0, 1);">Học đồ hoạ căn bản với module <span class="font-scale-4"><span style="font-family: &quot;Fira Mono&quot;, sans-serif;"><strong>turtle</strong></span></span> và module <span class="font-scale-4"><span style="font-family: &quot;Fira Mono&quot;, sans-serif;"><strong>tkinter</strong></span></span>, là nền tảng để viết các game về sau.</span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column flex__item--md-3 flex__item--xs-12 css-1b5csnr" data-guid="8267040e-b707-b825-45e7-d3a77c547728">
+              <div class="inner-column css-efs6e5">
+                <div class="row flex flex--12 css-1v1axsl">
+                  <div class="composite flex__item--md-12 flex__item--xs-12 css-8x0d4x">
+                    <div class="inner-composite flex flex--12">
+                      <div class="widget-column flex__item--md-12 flex__item--xs-12">
+                        <div class="widget-row flex flex--12">
+                          <div class="flex__item--md-12 flex__item--xs-12">
+                            <div data-widget-id="8bf559f1-c8d3-348a-9754-195baf8396bc" class="widget">
+                              <div class="css-1yltisf">
+                                <div>
+                                  <style data-emotion-css="aizmub">.css-aizmub{display:inline-block;vertical-align:middle;max-width:100px;}@media (max-width:530px){.site-header .composite .widget .css-aizmub{max-width:calc(100% - 80px);}}</style>
+                                  <img class="lp-image-react w-8bf559f1-c8d3-348a-9754-195baf8396bc css-aizmub" src="/images/ft-bounce.gif" data-image-upload-source="builder3" alt="" style="width:100%;max-width:100px"/>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row flex flex--12 css-1v1axsl">
+                  <div class="composite flex__item--md-12 flex__item--xs-12 css-8x0d4x">
+                    <div class="inner-composite flex flex--12">
+                      <div class="widget-column flex__item--md-12 flex__item--xs-12">
+                        <div class="widget-row flex flex--12">
+                          <div class="flex__item--md-12 flex__item--xs-12">
+                            <div data-widget-id="d7357062-f64c-acd9-05a3-7ab2a64e1105" class="widget">
+                              <div class="lp-text-react lp-headline-react" data-widget-type="LpTextReact">
+                                <p class="text-align-center font-scale-5 line-height-scale-8"><span style="color: rgba(0, 0, 0, 1);">Lập trình game "<strong>Bounce!</strong>"<br>Trò chơi đập bóng cổ điển nổi tiếng ai cũng đã từng chơi thử ít nhất một lần.</span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column flex__item--md-3 flex__item--xs-12 css-1b5csnr" data-guid="a0b91b04-9dc2-89dc-889a-a9c15dc6b2d8">
+              <div class="inner-column css-efs6e5">
+                <div class="row flex flex--12 css-1v1axsl">
+                  <div class="composite flex__item--md-12 flex__item--xs-12 css-8x0d4x">
+                    <div class="inner-composite flex flex--12">
+                      <div class="widget-column flex__item--md-12 flex__item--xs-12">
+                        <div class="widget-row flex flex--12">
+                          <div class="flex__item--md-12 flex__item--xs-12">
+                            <div data-widget-id="79fb2957-a25b-3b57-be9b-530ad02aad13" class="widget">
+                              <div class="css-1yltisf">
+                                <div>
+                                  <style data-emotion-css="1hx2wve">.css-1hx2wve{display:inline-block;vertical-align:middle;max-width:84px;}@media (max-width:530px){.site-header .composite .widget .css-1hx2wve{max-width:calc(100% - 80px);}}</style>
+                                  <img class="lp-image-react w-79fb2957-a25b-3b57-be9b-530ad02aad13 css-1hx2wve" src="/images/ft-stickman.gif" data-image-upload-source="builder3" alt="" style="width:100%;max-width:93px"/>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row flex flex--12 css-1v1axsl">
+                  <div class="composite flex__item--md-12 flex__item--xs-12 css-8x0d4x">
+                    <div class="inner-composite flex flex--12">
+                      <div class="widget-column flex__item--md-12 flex__item--xs-12">
+                        <div class="widget-row flex flex--12">
+                          <div class="flex__item--md-12 flex__item--xs-12">
+                            <div data-widget-id="0167e0b4-a0cd-22cb-2e4d-6975056b6cd1" class="widget">
+                              <div class="lp-text-react lp-headline-react" data-widget-type="LpTextReact">
+                                <p class="text-align-center font-scale-5 line-height-scale-8"><span style="color: rgba(0, 0, 0, 1);">Lập trình game "Mr. Stick Man Races for the Exit."<br>Trò chơi nhảy bậc thang với đủ các cử động hoạt hình.</span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <style data-emotion-css="16pqw52">.css-16pqw52{background-color:rgba(255,255,255,1);border-color:rgba(255,255,255,1);background-size:cover;background-position:center center;background-repeat:no-repeat;}.css-16pqw52 > .container{padding-top:5vw;padding-right:4vw;padding-bottom:5vw;padding-left:4vw;}.site-header .css-16pqw52 > .container{padding-top:20px;padding-right:0;padding-bottom:20px;padding-left:0;-webkit-transition:padding 0.03s ease;transition:padding 0.03s ease;}.bar .css-16pqw52{padding:0 50px;}@media (max-width:23.75em){.bar .css-16pqw52{padding:0 25px;}}@media (min-width:71.25em){.css-16pqw52 > .container{padding-top:57px;padding-right:45.6px;padding-bottom:57px;padding-left:45.6px;}}</style>
+      <section class="section css-16pqw52" data-guid="62d4e3a2-0fe4-a132-5baa-70a19ee4401e">
+        <div class="container" id="call-to-action">
+          <div class="layout flex flex--12" data-guid="8f6fc95e-ceb3-fbea-57b1-5d12586c2ca8">
+            <style data-emotion-css="q0t54h">.css-q0t54h{padding-top:0vw;padding-right:0vw;padding-bottom:0vw;padding-left:0vw;}@media(min-width:71.25em){.css-q0t54h.column{padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;}.css-q0t54h.column > .inner-column{padding-top:45.6px;padding-right:45.6px;padding-bottom:45.6px;padding-left:45.6px;}}</style>
+            <div class="column flex__item--md-12 flex__item--xs-12 css-q0t54h" data-guid="95b109c2-c904-8128-43d6-befd6fec7eed">
+              <style data-emotion-css="1w9v4bx">.css-1w9v4bx{background-color:rgba(141,198,63,1);border-color:rgba(141,198,63,1);background-image:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url("/images/bg1.png");background-size:cover;background-position:center center;background-repeat:no-repeat;padding-top:4vw;padding-right:4vw;padding-bottom:4vw;padding-left:4vw;}.bar .css-1w9v4bx{padding-top:0;padding-bottom:0;}</style>
+              <div class="inner-column css-1w9v4bx has-background-image has-background-size-cover" data-background="/images/bg1.png">
+                <div class="row flex flex--12 css-1v1axsl">
+                  <div class="composite flex__item--md-12 flex__item--xs-12 css-8x0d4x">
+                    <div class="inner-composite flex flex--12">
+                      <div class="widget-column flex__item--md-12 flex__item--xs-12">
+                        <div class="widget-row flex flex--12">
+                          <div class="flex__item--md-12 flex__item--xs-12">
+                            <div data-widget-id="1928051c-55cc-ceb4-d3bc-406bcd7b973c" class="widget">
+                              <div class="lp-text-react lp-headline-react" data-widget-type="LpTextReact">
+                                <h1 class="lp-headline text-align-center font-scale-5 line-height-scale-4 headline"><span style="color: rgba(255, 255, 255, 1);">Lời người dịch</span></h1>
+                                <p class="text-align-left font-scale-6 line-height-scale-8"><span style="color: rgba(255, 255, 255, 1);">          Tôi ấn tượng với cuốn sách này ngay từ lần đầu đọc, từ cách hành văn, từng câu chữ, cho đến những câu đùa, và tất nhiên là cả lượng kiến thức lập trình không nhiều nhưng cũng không hề ít được tác giả <strong>Jason R. Briggs</strong> đề cập đến. Ngôn ngữ gần gũi và tếu táo của anh làm tôi nảy ra ham muốn nhất thời không kìm được, đó là dịch quyển sách này ra cho các độc giả nhỏ tuổi ở Việt Nam. Tôi luôn thấy thương các em với những lịch học dày đặc và những áp lực vô hình trên vai. Tôi hy vọng cuốn sách này sẽ mang đến cho em chút niềm vui nhỏ bé và khơi dậy sự tò mò trong em, để em có thể tự mở ra cho chính mình cánh cửa đến với sự tự do khám phá trong không gian lập trình đầy thú vị này.</span></p>
+                                <p class="text-align-left font-scale-6 line-height-scale-8"><span style="color: rgba(255, 255, 255, 1);">          <strong>Python</strong> là một ngôn ngữ lập trình hết sức phổ biến trong những năm gần đây. Không những thế, nó còn là một trong những công cụ hiện đại nhất để bước chân vào kỷ nguyên của khám phá dữ liệu, xác suất thống kê và trí tuệ nhân tạo. Nghe thì phức tạp nhưng Python lại rất dễ tiếp cận, dễ nắm bắt, xứng đáng là ngôn ngữ lập trình dành cho mọi người.</span></p>
+                                <p class="text-align-center font-scale-6 line-height-scale-8"><span style="color: rgba(255, 255, 255, 1);">Học lập trình, nói cho cùng, <strong><u>không phải</u></strong> là để thành lập trình viên.<br>Lập trình về cơ bản cũng chỉ là một kỹ năng sống, một kỹ năng quan trọng!</span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row flex flex--12 css-1v1axsl">
+                  <div class="composite flex__item--md-12 flex__item--xs-12 css-8x0d4x">
+                    <div class="inner-composite flex flex--12">
+                      <div class="widget-column flex__item--md-12 flex__item--xs-12">
+                        <div class="widget-row flex flex--12">
+                          <div class="flex__item--md-12 flex__item--xs-12">
+                            <div data-widget-id="6f86c0e6-9b2e-3da1-8a32-96f627439dd1" class="widget">
+                              <style data-emotion-css="15ztr6m">.css-15ztr6m{text-align:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;}</style>
+                              <div class="lp-button-react-wrapper css-15ztr6m" data-widget-type="LpButtonReact">
+                                <style data-emotion-css="1re04ry">.css-1re04ry{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;border-style:solid;border-width:1px;text-align:center;font-family:'Lato',sans-serif;text-shadow:none;-webkit-transition:color 0.2s linear,background 0.2s linear,border-color 0.2s linear, text-shadow 0.2s linear;transition:color 0.2s linear,background 0.2s linear,border-color 0.2s linear, text-shadow 0.2s linear;-webkit-text-decoration:none;text-decoration:none;position:relative;font-weight:bold;min-height:48px;min-width:96px;padding:14px 24px;font-family:"Sigmar One",sans-serif;border-radius:10px;}.css-1re04ry::before{border-radius:10px;}.css-1re04ry,.css-1re04ry:focus,.css-1re04ry:active{border-color:rgb(249,157,28);background:rgb(249,157,28);color:rgb(255,255,255);}.css-1re04ry:hover{background-color:rgb(198,125,22);border-color:rgb(198,125,22);color:rgb(255,255,255);}</style>
+                                <a data-widget-link="true" href="#LB-TrxrxXksDYbFq259cJfsnj" target="_top" data-link-type="leadbox" data-leadbox-popup="TrxrxXksDYbFq259cJfsnj" data-leadbox-domain="emhocpython.lpages.co" class="lp-button-react w-6f86c0e6-9b2e-3da1-8a32-96f627439dd1 is-bold lp-button-react--medium lp-button-react--flat lp-btn-flat font-scale-6 line-height-scale-3 css-1re04ry" contenteditable="false"><span style="font-weight: normal;">MUA SÁCH Ở ĐÂY</span></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <style data-emotion-css="1dvnsiy">.css-1dvnsiy{background-color:rgba(249,157,28,1);border-color:rgba(249,157,28,1);background-image:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url("/images/bg2.png");background-size:cover;background-position:center center;background-repeat:no-repeat;}.css-1dvnsiy > .container{padding-top:3vw;padding-right:0vw;padding-bottom:3vw;padding-left:0vw;}.site-header .css-1dvnsiy > .container{padding-top:10px;padding-right:0;padding-bottom:10px;padding-left:0;-webkit-transition:padding 0.03s ease;transition:padding 0.03s ease;}.bar .css-1dvnsiy{padding:0 50px;}@media (max-width:23.75em){.bar .css-1dvnsiy{padding:0 25px;}}@media (min-width:71.25em){.css-1dvnsiy > .container{padding-top:34.2px;padding-right:0px;padding-bottom:34.2px;padding-left:0px;}}</style>
+      <section class="has-background-image has-background-size-cover section css-1dvnsiy" data-guid="43f4ef38-6c87-6742-5b01-24dd6d6cb132" data-background="/images/bg2.png">
+        <div class="container" id="about-the-author">
+          <div class="layout flex flex--12" data-guid="66fe6c0b-3afb-b10f-5594-6c0c8d4424a4">
+            <style data-emotion-css="11i9bob">.css-11i9bob{padding-top:0vw;padding-right:4vw;padding-bottom:0vw;padding-left:4vw;}@media(min-width:71.25em){.css-11i9bob.column{padding-top:0px;padding-right:45.6px;padding-bottom:0px;padding-left:45.6px;}.css-11i9bob.column > .inner-column{padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;}}</style>
+            <div class="column flex__item--md-4 flex__item--xs-12 css-11i9bob" data-guid="be05537d-edd3-ca38-f654-d8ebb464cd55">
+              <div class="inner-column css-8f3iaw">
+                <div class="row flex flex--12 css-1v1axsl">
+                  <div class="composite flex__item--md-12 flex__item--xs-12 css-8x0d4x">
+                    <div class="inner-composite flex flex--12">
+                      <div class="widget-column flex__item--md-12 flex__item--xs-12">
+                        <div class="widget-row flex flex--12">
+                          <div class="flex__item--md-12 flex__item--xs-12">
+                            <div data-widget-id="81334dbc-a225-61fe-4dcf-056984c4e1a7" class="widget">
+                              <div class="css-1yltisf">
+                                <div>
+                                  <style data-emotion-css="2javw3">.css-2javw3{display:inline-block;vertical-align:middle;max-width:1589px;border-radius:12px;}@media (max-width:530px){.site-header .composite .widget .css-2javw3{max-width:calc(100% - 80px);}}</style>
+                                  <img class="lp-image-react w-81334dbc-a225-61fe-4dcf-056984c4e1a7 css-2javw3 lazyload" src="/images/pltc.jpg" data-src="/images/pltc.jpg" data-image-upload-source="builder3" alt="" style="width:100%"/>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <style data-emotion-css="wt4plq">.css-wt4plq{padding-top:3vw;padding-right:4vw;padding-bottom:3vw;padding-left:4vw;}@media(min-width:71.25em){.css-wt4plq.column{padding-top:34.2px;padding-right:45.6px;padding-bottom:34.2px;padding-left:45.6px;}.css-wt4plq.column > .inner-column{padding-top:45.6px;padding-right:45.6px;padding-bottom:45.6px;padding-left:45.6px;}}</style>
+            <div class="column flex__item--md-8 flex__item--xs-12 css-wt4plq" data-guid="597c82e6-f156-8dc3-e7e4-ae44c5d6a775">
+              <style data-emotion-css="1usg7uh">.css-1usg7uh{background-color:rgba(255,255,255,1);border-color:rgba(255,255,255,1);background-size:cover;background-position:center center;background-repeat:no-repeat;padding-top:4vw;padding-right:4vw;padding-bottom:4vw;padding-left:4vw;}.bar .css-1usg7uh{padding-top:0;padding-bottom:0;}</style>
+              <div class="inner-column css-1usg7uh">
+                <div class="row flex flex--12 css-1v1axsl">
+                  <div class="composite flex__item--md-12 flex__item--xs-12 css-8x0d4x">
+                    <div class="inner-composite flex flex--12">
+                      <div class="widget-column flex__item--md-12 flex__item--xs-12">
+                        <div class="widget-row flex flex--12">
+                          <div class="flex__item--md-12 flex__item--xs-12">
+                            <div data-widget-id="053b8b2b-c91d-097c-a62e-280b91a30ff6" class="widget">
+                              <div class="lp-text-react lp-headline-react" data-widget-type="LpTextReact">
+                                <h3 class="lp-headline text-align-left font-scale-6 line-height-scale-6 small-subhead">Giới thiệu Dịch giả</h3>
+                                <p class="text-align-left font-scale-5 line-height-scale-7"><span class="font-scale-5"><strong>Phan Chương</strong> xuất thân là kỹ sư lập trình ở Việt Nam, sau đó anh chuyển sang Mỹ làm chuyên gia về xử lý Dữ liệu lớn <span style="color: rgb(255, 0, 0);"><span style="font-family: &quot;Architects Daughter&quot;, sans-serif;"><em><strong>(Big Data)</strong></em></span></span>, đặc biệt là về các tác vụ có liên quan đến Máy học <span style="color: rgb(255, 0, 0);"><span style="font-family: &quot;Architects Daughter&quot;, sans-serif;"><em><strong>(Machine Learning)</strong></em></span></span>.</p>
+                                <p class="text-align-left font-scale-5 line-height-scale-7">Năm 2020, anh được mời phát biểu tại buổi hội thảo thường niên Spark AI Summit – diễn đàn về nền tảng mã nguồn mở Apache Spark, Dữ liệu lớn và Trí tuệ nhân tạo lớn nhất với hơn 60.000 chuyên gia đến từ khắp nơi trên thế giới – với chủ đề <a href="https://databricks.com/blog/2021/03/17/advertising-fraud-detection-at-scale-at-t-mobile.html" target="_blank" rel="noopener noreferrer" data-link-type="external">phát hiện gian lận trong quảng cáo</a> ở T-Mobile – nhà mạng lớn thứ 2 ở Mỹ. Đồng thời cũng ở T-Mobile, nhiều sáng kiến của anh đã được cấp bằng sáng chế và đưa vào sử dụng thực tiễn.</p>
+                                <p class="text-align-left font-scale-5 line-height-scale-7">Lúc rảnh rỗi, anh thường tham gia dịch cho các buổi nói chuyện trên <a href="https://www.ted.com/profiles/21659565/translator" target="_blank" rel="noopener noreferrer" data-link-type="external">TED Talks</a> và là thành viên tích cực trên cộng đồng lập trình nổi tiếng <a href="https://stackoverflow.com/users/3441510/pltc" target="_blank" rel="noopener noreferrer" data-link-type="external">StackOverflow</a>.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <style data-emotion-css="13hpov6">.css-13hpov6{background-color:rgba(0,0,0,0);border-color:rgba(0,0,0,0);background-size:cover;background-position:center center;background-repeat:no-repeat;}.css-13hpov6 > .container{padding-top:1vw;padding-right:1vw;padding-bottom:1vw;padding-left:1vw;}.site-header .css-13hpov6 > .container{padding-top:0px;padding-right:0;padding-bottom:0px;padding-left:0;-webkit-transition:padding 0.03s ease;transition:padding 0.03s ease;}.bar .css-13hpov6{padding:0 50px;}@media (max-width:23.75em){.bar .css-13hpov6{padding:0 25px;}}@media (min-width:71.25em){.css-13hpov6 > .container{padding-top:11.4px;padding-right:11.4px;padding-bottom:11.4px;padding-left:11.4px;}}</style>
+      <section class="section css-13hpov6" data-guid="298f6ac8-1ea8-d1bf-9621-df563944c414">
+        <div class="container" id="footer">
+          <div class="layout flex flex--12" data-guid="87d9bf7b-19b8-f5e3-eff9-3706b51b06da">
+            <style data-emotion-css="qlm3qf">.css-qlm3qf{padding-top:0vw;padding-right:0vw;padding-bottom:0vw;padding-left:0vw;}@media(min-width:71.25em){.css-qlm3qf.column{padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;}.css-qlm3qf.column > .inner-column{padding-top:11.4px;padding-right:0px;padding-bottom:0px;padding-left:0px;}}</style>
+            <div class="column flex__item--md-10 flex__item--xs-12 css-qlm3qf" data-guid="532a370d-b8b8-1e38-5436-079257965477">
+              <style data-emotion-css="ipwfbo">.css-ipwfbo{background-color:rgba(0,0,0,0);border-color:rgba(0,0,0,0);background-size:cover;background-position:center center;background-repeat:no-repeat;padding-top:1vw;padding-right:0vw;padding-bottom:0vw;padding-left:0vw;}.bar .css-ipwfbo{padding-top:0;padding-bottom:0;}</style>
+              <div class="inner-column css-ipwfbo">
+                <div class="row flex flex--12 css-1v1axsl">
+                  <div class="composite flex__item--md-12 flex__item--xs-12 css-8x0d4x">
+                    <div class="inner-composite flex flex--12">
+                      <div class="widget-column flex__item--md-12 flex__item--xs-12">
+                        <div class="widget-row flex flex--12">
+                          <div class="flex__item--md-12 flex__item--xs-12">
+                            <div data-widget-id="297c1648-cbf5-937b-fdee-3303682f420b" class="widget">
+                              <div class="lp-text-react lp-headline-react" data-widget-type="LpTextReact">
+                                <p class="text-align-left font-scale-1 line-height-scale-6">
+                                  <span style="font-family:Source Serif Pro;">©2020 – Bản quyền Tiếng Việt thuộc về Công ty Cổ phần giáo dục Sputnik – Sách được xuất bản dưới sự hỗ trợ của Trường Đại học CNTT Trực tuyến FUNiX</span>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column flex__item--md-2 flex__item--xs-12 css-v8gnm5" data-guid="10588b94-24ab-84e2-06ed-888ab1f2bdd1">
+              <div class="inner-column css-8f3iaw">
+                <div class="row flex flex--12 css-1v1axsl">
+                  <div class="composite flex__item--md-12 flex__item--xs-12 css-8x0d4x">
+                    <div class="inner-composite flex flex--12">
+                      <div class="widget-column flex__item--md-12 flex__item--xs-12">
+                        <div class="widget-row flex flex--12">
+                          <div class="flex__item--md-12 flex__item--xs-12">
+                            <div data-widget-id="da54d0ac-6c2c-a797-1ef9-55cb16bf58af" class="widget">
+                              <style data-emotion-css="889chh">.css-889chh{text-align:right;}</style>
+                              <div class="css-889chh">
+                                <div>
+                                  <img class="lp-image-react w-da54d0ac-6c2c-a797-1ef9-55cb16bf58af css-499t0o lazyload" src="/images/logo.png" data-src="/images/logo.png" data-image-upload-source="builder3" alt="" style="width:100%;max-width:40px"/>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
+<!-- v4.8.27 -->
