@@ -240,22 +240,6 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/index.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/index.html",
-      "oF" : 0
-    },
-    "\/mua-sach.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/mua-sach.html",
-      "oF" : 0
-    },
     "\/robots.txt" : {
       "cB" : 0,
       "ft" : 8192,
