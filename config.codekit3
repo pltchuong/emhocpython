@@ -17,6 +17,27 @@
       "oAP" : "\/CNAME",
       "oF" : 0
     },
+    "\/console.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/console.html",
+      "oF" : 0
+    },
+    "\/images\/bg0.jpg" : {
+      "ft" : 16384,
+      "iS" : 982770,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/images\/bg0.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/images\/bg1.png" : {
       "ft" : 32768,
       "iS" : 18848,
@@ -39,6 +60,32 @@
       "oIPL" : 0,
       "opt" : 0,
       "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/images\/bg3.png" : {
+      "ft" : 32768,
+      "iS" : 956855,
+      "oA" : 0,
+      "oAP" : "\/images\/bg3.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/images\/covers-1.jpg" : {
+      "ft" : 16384,
+      "iS" : 982770,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/images\/covers-1.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -180,6 +227,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/images\/preview-here.png" : {
+      "ft" : 32768,
+      "iS" : 5437,
+      "oA" : 0,
+      "oAP" : "\/images\/preview-here.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -187,6 +247,46 @@
       "oA" : 0,
       "oAP" : "\/index.html",
       "oF" : 0
+    },
+    "\/mua-sach.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/mua-sach.html",
+      "oF" : 0
+    },
+    "\/robots.txt" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/robots.txt",
+      "oF" : 0
+    },
+    "\/styles\/leadpages.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/styles\/leadpages-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/styles\/overwrite.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/styles\/overwrite-min.css",
+      "oF" : 0,
+      "pg" : 0
     }
   },
   "hooks" : [
